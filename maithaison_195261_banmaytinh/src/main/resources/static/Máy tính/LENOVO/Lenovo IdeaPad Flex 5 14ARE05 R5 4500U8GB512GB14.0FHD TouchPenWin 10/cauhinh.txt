@@ -1,0 +1,100 @@
+﻿Bộ xử lý
+Hãng CPU :	AMD
+Công nghệ CPU :	Ryzen™ 5
+Loại CPU :	4500U
+Số lõi :	6
+Số luồng :	6
+Tốc độ CPU :	2.3GHz
+Tốc độ tối đa :	4.0GHz
+Bộ nhớ đệm :	8 MB Cache
+Tốc độ BUS :	Đang cập nhật
+RAM
+Dung lượng RAM :	8 GB
+Loại RAM :	DDR4
+Tốc độ RAM :	3200 MHz
+Số khe cắm rời :	0
+Số khe RAM còn lại :	0
+Số RAM onboard :	1
+Hỗ trợ RAM tối đa :	8 GB
+Màn hình
+Kích thước màn hình :	14"
+Độ phân giải :	1920 x 1080 Pixels , 60Hz
+Tần số quét :	60 Hz
+Độ sáng :	220 nits
+Tấm nền :	TN
+Công nghệ màn hình :	FHD Touch
+Độ phủ màu :	45% NTSC
+Tỷ lệ màn hình :	16:09
+Độ tương phản :	Đang cập nhật
+Màn hình cảm ứng :	Có
+Loại cảm ứng :	Không
+Đồ họa
+Hãng (Card onboard) :	AMD
+Card onboard :	Radeon Graphics
+Model (Card onboard) :	Vega 6
+Xung nhịp tối đa (Card onboard) :	1500 MHz
+Lưu trữ
+Kiểu SSD :	M2. PCIe
+Dung lượng SSD :	512 GB
+Hỗ trợ công nghệ Optane :	Không
+Tổng số khe cắm SSD/HDD :	1
+Số khe SSD/HDD còn lại :	1
+Chuẩn M2 :	2242
+Giao tiếp & Kết nối
+Số cổng Type-C :	4
+Số cổng USB 3.0 :	0
+Số cổng USB 2.0 :	0
+Số cổng HDMI :	1
+Số cổng VGA :	0
+Số cổng Card reader :	1
+Số cổng DC-in jack :	0
+Số cổng 3.5 mm :	1
+Số cổng Thunderbolt :	0
+Số cổng LAN :	0
+Wireless :	802.11 ac
+Bluetooth :	v5.0
+Khe đọc thẻ nhớ :	MMC, SD, SDHC, SDXC
+Senser :	Không
+Webcame :	720p FaceTime HD camera
+Âm thanh
+Số Loa :	Đang cập nhật
+Bảo mật
+Mở khóa vân tay (Finger Print) :	Có
+Nhận diện khuôn mặt :	Không
+Mật khẩu :	Không
+Ổ đĩa quang
+Loại ổ đĩa quang :	Không
+Ổ đĩa quang :	Không
+Bàn phím & TouchPad
+Kiểu bàn phím :	6-row, multimedia Fn keys
+Bàn phím số :	Không
+Màu đèn LED :	Blue
+TouchPad :	Multi-touch touchpad
+Thông tin pin
+Loại PIN :	Lithium-Ion, Liền
+PIN (Cell) :	3 Cell - 52.5WH
+PIN có thể tháo rời :	Không
+Power Supply :	65 W
+Hệ điều hành
+OS :	Windows 10 Home SL 64
+Type :	Đang cập nhật
+Version :	Đang cập nhật
+Thiết kế & Trọng lượng
+Width (mm) :	320.2
+Depth (mm) :	210.5
+Height (mm) :	17.9
+Trọng lượng (kg) :	1.556 kg
+Chất liệu mặt bên ngoài cùng :	Nhựa
+Chất liệu khung màn hình :	Đang cập nhật
+Chất liệu mặt bàn phím + kê tay :	ABS plastic
+Chất liệu mặt lưng :	ABS plastic
+Thông tin thêm
+Bản lề (Hinge / Kickstand) :	Đang cập nhật
+Tản nhiệt :	Đang cập nhật
+Thông tin hàng hóa
+P/N :	81X2008XVN
+Năm ra mắt :	2020
+Xuất xứ :	Trung Quốc
+Thời gian bảo hành :	24 Tháng
+Phụ kiện trong hộp
+Phụ kiện kèm theo :	Sạc, Sách HD

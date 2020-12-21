@@ -1,0 +1,113 @@
+﻿Bộ xử lý
+Hãng CPU :	AMD
+Công nghệ CPU :	Ryzen 7
+Loại CPU :	4800H
+Số lõi :	8
+Số luồng :	16
+Tốc độ CPU :	2.90 GHz
+Tốc độ tối đa :	4.20 GHz
+Bộ nhớ đệm :	8 MB L3 Cache
+Tốc độ BUS :	8 GT/s
+RAM
+Dung lượng RAM :	8 GB
+Loại RAM :	DDR4
+Tốc độ RAM :	3200 MHz
+Số khe cắm rời :	2
+Số khe RAM còn lại :	1
+Số RAM onboard :	0
+Hỗ trợ RAM tối đa :	16 GB
+Màn hình
+Kích thước màn hình :	15.6"
+Loại màn hình :	LED
+Độ phân giải :	1920 x 1080 Pixel
+Tần số quét :	120 Hz
+Độ sáng :	250 nits
+Tấm nền :	IPS
+Công nghệ màn hình :	LED-backlit
+Độ phủ màu :	45% NTSC
+Tỷ lệ màn hình :	16:09
+Độ tương phản :	Đang cập nhật
+Màn hình cảm ứng :	Không
+Loại cảm ứng :	Không
+Đồ họa
+Hãng (Card onboard) :	AMD
+Card onboard :	Radeon Graphics
+Model (Card onboard) :	Radeon
+Xung nhịp (Card onboard) :	300 MHz
+Xung nhịp tối đa (Card onboard) :	1600 MHz
+Hãng (Card rời) :	NVIDIA
+Card rời :	GeForce Series
+Model (Card rời) :	GTX 1650
+Bộ nhớ đồ họa (Card rời) :	4 GB
+Kiểu bộ nhớ :	GDDR6
+Xung nhịp (Card rời) :	Đang cập nhật
+Xung nhịp tối đa (Card rời) :	Đang cập nhật
+Lưu trữ
+Kiểu SSD :	M2. PCIe
+Dung lượng SSD :	512 GB
+Tốc độ đọc/ghi :	Đang cập nhật
+Hỗ trợ công nghệ Optane :	Có
+Tổng số khe cắm SSD/HDD :	3
+Số khe SSD/HDD còn lại :	2
+Chuẩn M2 :	2280
+Giao tiếp & Kết nối
+Số cổng Type-C :	1
+Số cổng USB 3.0 :	4
+Số cổng USB 2.0 :	0
+Số cổng HDMI :	1
+Số cổng VGA :	0
+Số cổng Card reader :	0
+Số cổng DC-in jack :	1
+Số cổng 3.5 mm :	1
+Số cổng Thunderbolt :	0
+Số cổng LAN :	1
+Wireless :	802.11 ac
+Bluetooth :	v5.0
+Khe đọc thẻ nhớ :	Không
+Senser :	Không
+Webcame :	HD Web Camera
+Âm thanh
+Số Loa :	2
+Công nghệ âm thanh :	Harman Kardon speakers
+Bảo mật
+Mở khóa vân tay (Finger Print) :	Không
+Nhận diện khuôn mặt :	Không
+Mật khẩu :	Không
+Ổ đĩa quang
+Loại ổ đĩa quang :	Không
+Ổ đĩa quang :	Không
+Bàn phím & TouchPad
+Kiểu bàn phím :	6-row, multimedia Fn keys, numeric keypad
+Bàn phím số :	Có
+Loại đèn bàn phím :	LED
+Công nghệ đèn bàn phím :	Đơn sắc
+Màu đèn LED :	White
+TouchPad :	Buttonless Mylar surface multi-touch touchpad
+Thông tin pin
+Loại PIN :	Lithium-Polymer
+PIN (Cell) :	4 Cell
+PIN có thể tháo rời :	Không
+Power Supply :	Đang cập nhật
+Hệ điều hành
+OS :	Windows 10
+Type :	64 bit
+Version :	Home
+Thiết kế & Trọng lượng
+Width (mm) :	363
+Depth (mm) :	260
+Height (mm) :	25.4
+Trọng lượng (kg) :	2.3
+Chất liệu mặt bên ngoài cùng :	ABS plastic
+Chất liệu khung màn hình :	ABS plastic
+Chất liệu mặt bàn phím + kê tay :	ABS plastic
+Chất liệu mặt lưng :	ABS plastic
+Thông tin thêm
+Bản lề (Hinge / Kickstand) :	Đang cập nhật
+Tản nhiệt :	Đang cập nhật
+Thông tin hàng hóa
+P/N :	82B5004EVN
+Năm ra mắt :	2020
+Xuất xứ :	Trung Quốc
+Thời gian bảo hành :	24 Tháng
+Phụ kiện trong hộp
+Phụ kiện kèm theo :	SẠC

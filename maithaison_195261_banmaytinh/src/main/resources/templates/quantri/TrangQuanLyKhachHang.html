@@ -1,0 +1,168 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Trang quản lý khách hàng</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+    <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script>
+
+    <style>
+        .mau {
+            color: rgb(212, 212, 226);
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <div style="width: 1535px;height: 720px;display: flex;background-color: #dcebe3;">
+        <div style="background-color: #51545c;width: 300px;height: 720px;">
+            <div style="margin: 5px;overflow: auto;border: 1px solid rgb(255, 224, 224);border-radius: 5px;">
+                <div style="float: left;padding: 10px;">
+                    <img src="../anh1.PNG" class="rounded-circle" style="width: 50px;height: 35px;">
+                </div>
+                <div class="mau" style="font-size: 20px;float: left;margin-left: 15px;margin-top: 12px;">
+                    FPT SHOP
+                </div>
+            </div>
+            <div style="margin: 5px;overflow: auto;border: 1px solid rgb(255, 228, 228);border-radius: 5px;">
+                <div style="float: left;padding: 10px;">
+                    <img src="../anh1.PNG" class="rounded-circle" style="width: 35px;height: 35px;">
+                </div>
+                <div class="mau" style="font-size: 20px;float: left;margin-left: 15px;margin-top: 12px;">
+                    MAI THÁI SƠN
+                </div>
+            </div>
+            <div style="padding-left: 5px;padding-right: 5px;margin-top: 15px;" class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="mau nav-link active" id="v-pills-tc-tab" data-toggle="pill" href="#v-pills-tc" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                    <i class="fas fa-user-friends"><span style="margin-left: 10px;">Chi tiết người dùng</span></i>
+                </a>
+                <a class="mau nav-link" id="v-pills-dx-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                    <i class="fas fa-sign-out-alt"><span style="margin-left: 10px;">Đăng xuất</span></i>
+                </a>
+            </div>
+        </div>
+
+        <div style="width: 1235px;height: 720px;" class="tab-content" id="v-pills-tabContent">
+            <div style="font-weight: bold;padding: 15px;width: 1235px;height: 50px;background-color: white;">
+                <i class="fas fa-user-shield"><span style="margin-left: 10px;" th:utext="'ADMIN PAGE - CHI TIẾT KHÁCH HÀNG ' + ${chitietkhachhang.makh} + ' - NGÀY 3/10/2020'"> </span></i>
+            </div>
+            <!--Trang chi tiết người dùng-->
+            <div style="padding: 15px;width: 1235px;height: 585px;" class="tab-pane fade show active" id="v-pills-tc" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                <h4 style="font-weight: bold;color: rgb(255, 255, 255);">
+                    <i class="fas fa-book-reader"><span style="margin-left: 10px;color: rgb(102, 102, 102);">Chi tiết thông tin người dùng</span></i>
+                </h4>
+                <div style="float: left;border: 1px solid rgb(216, 208, 208);">
+                    <div class="card" style="width:400px">
+                        <img class="card-img-top" src="/AnhNen/anhandanh.png" alt="Card image" style="width: 100%;height: 375px;">
+                        <div class="card-body">
+                            <h4 class="card-title" th:utext="${chitietkhachhang.tenkhachhang}"></h4>
+                            <p class="card-text" th:utext="'Ngày sinh: ' + ${chitietkhachhang.ngaysinh}">Ngày sinh: 10/10/1998</p>
+                            <th:block th:if="${chitietkhachhang.isaccountnonexpired}">
+                            	<p class="card-text">Thời hạn tài khoản: vô hạn</p>
+                            </th:block>
+                            <th:block th:unless="${chitietkhachhang.isaccountnonexpired}">
+                            	<p class="card-text">Thời hạn tài khoản: hết hạn</p>
+                            </th:block>
+                            
+                            <th:block th:if="${chitietkhachhang.isenabled}">
+                            	<p class="card-text">Tài khoản còn hoạt động: có</p>
+                            </th:block>
+                            <th:block th:unless="${chitietkhachhang.isenabled}">
+                            	<p class="card-text">Tài khoản còn hoạt động: không</p>
+                            </th:block>
+                            
+                            <th:block th:if="${chitietkhachhang.isaccountnonlocked}">
+                            	<p class="card-text">Tài khoản bị khóa: Có</p>
+                            </th:block>
+                            <th:block th:unless="${chitietkhachhang.isaccountnonlocked}">
+                            	<p class="card-text">Tài khoản bị khóa: không</p>
+                            </th:block>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div style="float: left;margin-left: 15px;">
+                    <div style="width: 775px;overflow: auto;">
+                        <div style="padding: 15px;border-radius: 5px;background-color: white;width: 380px;float: left;overflow: auto;">
+                            <label style="font-weight: bold;" th:utext="'Số đơn hàng đặt mua trong tháng: ' + ${thang}"></label>
+                            <input disabled type="text" class="form-control" th:value="${sodondattrongthang}" style="background-color: rgb(255, 255, 183);border-color: white;">
+                        </div>
+                        <div style="padding: 15px;border-radius: 5px;background-color: white;width: 380px;float: left;margin-left: 15px;overflow: auto;">
+                            <label style="font-weight: bold;" th:utext="'Số lượng sản phẩm đã mua trong tháng: ' + ${thang}"></label>
+                            <input disabled type="text" class="form-control" th:value="${sosanphammuatrongthang}" style="background-color: rgb(255, 255, 183);border-color: white;">
+                        </div>
+                    </div>
+                    <div style="width: 775px;overflow: auto;margin-top: 15px;">
+                        <div style="padding: 15px;border-radius: 5px;background-color: white;width: 380px;float: left;overflow: auto;">
+                            <label style="font-weight: bold;" th:utext="'Số lượt tương tác đánh giá: ' + ${thang}"></label>
+                            <input disabled type="text" class="form-control" th:value="${soluottuongtacdanhgia}" style="background-color: rgb(255, 255, 183);border-color: white;">
+                        </div>
+                        <div style="padding: 15px;border-radius: 5px;background-color: white;width: 380px;float: left;margin-left: 15px;overflow: auto;">
+                            <label style="font-weight: bold;" th:utext="'Tổng tiền được chi ra trong tháng: ' + ${thang}"></label>
+                            <input disabled type="text" class="form-control" th:value="${tongtienchiratrongthang}" style="background-color: rgb(255, 255, 183);border-color: white;">
+                        </div>
+                    </div>
+                    <div style="margin-top: 15px;padding: 15px;background-color: white;border-radius: 5px;">
+                        <h5 style="font-weight: bold;color: gray;">Biểu đồ tổng tiền chi theo tháng năm 2020</h5>
+                        <div id="container1" style="width: 100%; height: 310px"></div>
+                        
+                        <script th:inline="javascript">
+                            anychart.onDocumentReady(function() {
+                                // set the data
+                                var row = [
+                                    
+                                ];
+                                                              
+                                [# th:each="ttctt : ${tongtienchitheothang}"]         
+                                	var thang = "Tháng " + [[${ttctt.key}]]; 
+                                	var tongchi = [[${ttctt.value}]];	
+                                	
+                                    row.push([thang,tongchi]);
+                                [/]
+  
+                                var data = {
+                                    header: ["Tháng", "Tổng chi"],
+                                    rows: [
+                                        
+                                    ]
+                                };
+                                var dodai = row.length;
+                                for (i = 0; i < dodai; i++) {
+                                    data.rows.push(row[i]);
+                                }                              
+                                // create the chart
+                                var chart = anychart.bar();
+                                // add the data
+                                chart.data(data);
+                                // draw
+                                chart.container("container1");
+                                chart.draw();
+                            });
+                        </script>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

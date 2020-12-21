@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Trang soạn thư trả lời</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+    <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script>
+
+    <style>
+        .mau {
+            color: rgb(212, 212, 226);
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <div style="width: 1535px;height: 720px;display: flex;background-color: #dcebe3;">
+        <div style="background-color: #51545c;width: 300px;height: 720px;">
+            <div style="margin: 5px;overflow: auto;border: 1px solid rgb(255, 224, 224);border-radius: 5px;">
+                <div style="float: left;padding: 10px;">
+                    <img src="../anh1.PNG" class="rounded-circle" style="width: 50px;height: 35px;">
+                </div>
+                <div class="mau" style="font-size: 20px;float: left;margin-left: 15px;margin-top: 12px;">
+                    FPT SHOP
+                </div>
+            </div>
+            <div style="margin: 5px;overflow: auto;border: 1px solid rgb(255, 228, 228);border-radius: 5px;">
+                <div style="float: left;padding: 10px;">
+                    <img src="../anh1.PNG" class="rounded-circle" style="width: 35px;height: 35px;">
+                </div>
+                <div class="mau" style="font-size: 20px;float: left;margin-left: 15px;margin-top: 12px;">
+                    MAI THÁI SƠN
+                </div>
+            </div>
+            <div style="padding-left: 5px;padding-right: 5px;margin-top: 15px;" class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="mau nav-link active" id="v-pills-tc-tab" data-toggle="pill" href="#v-pills-tc" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                    <i class="fas fa-user-friends"><span style="margin-left: 10px;">Soạn thư trả lời người dùng</span></i>
+                </a>
+                <a class="mau nav-link" id="v-pills-dx-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                    <i class="fas fa-sign-out-alt"><span style="margin-left: 10px;">Đăng xuất</span></i>
+                </a>
+            </div>
+        </div>
+
+        <div style="width: 1235px;height: 720px;" class="tab-content" id="v-pills-tabContent">
+            <div style="font-weight: bold;padding: 15px;width: 1235px;height: 50px;background-color: white;">
+                <i class="fas fa-user-shield">
+                    <span style="margin-left: 10px;">
+                        ADMIN PAGE - TRANG SOẠN THƯ TRẢ LỜI NGƯỜI DÙNG
+                    </span>
+                </i>
+            </div>
+            <!--Trang chi tiết người dùng-->
+            <div style="padding: 15px;width: 1235px;height: 585px;" class="tab-pane fade show active" id="v-pills-tc" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                <h4 style="font-weight: bold;color: rgb(255, 255, 255);">
+                    <i class="fas fa-book-reader"><span style="margin-left: 10px;color: rgb(102, 102, 102);">Phần soạn văn thư trả lời</span></i>
+                </h4>
+
+                <div class="form-group">
+                    <div style="float: left;">
+                        <label for="email">Email khách hàng:</label>
+                    </div>
+                    <div style="float: left;margin-left: 35px;">
+                        <input th:value="${emailkh}" style="width: 500px;" disabled type="email" class="form-control" placeholder="Enter email" id="email">
+                    </div>
+                </div>
+                <div class="form-group" style="clear: both;margin-top: 50px;">
+                    <div style="float: left;">
+                        <label for="pwd">Chủ đề:</label>
+                    </div>
+                    <div style="float: left;margin-left: 109px;">
+                        <input th:value="${chude}" style="width: 500px;" disabled type="text" class="form-control" placeholder="Enter password" id="pwd">
+                    </div>
+                </div>
+                <div class="form-group" style="clear: both;margin-top: 92px;">
+                    <div style="float: left;">
+                        <label for="pwd">Nội dung:</label>
+                    </div>
+                    <div style="float: left;margin-left: 92.5px;">
+                        <textarea type="text" style="width: 800px;" disabled class="form-control" rows="3" name="noidung">
+							<span th:value="${noidung}"></span>
+                        </textarea>
+                    </div>
+
+                </div>
+
+                <h5 style="clear: both;margin-top: 200px;">Trả lời khách hàng</h5>
+                <form th:action="@{/trangquantri/guithuquaemail}">
+                	<div>
+                		<input hidden th:value="${emailkh}" type="text" class="form-control" name="emailkh">
+                	</div>
+                    <div class="form-group" hidden>
+                        <input hidden type="text" class="form-control" th:value="${emailad}" name="emailqtv">
+                    </div>
+                    <div class="form-group">
+                        <label>Mật khẩu email:</label>
+                        <input type="password" class="form-control" placeholder="Nhập mật khẩu email...." name="matkhauemail">
+                    </div>
+                    <div class="form-group">
+                        <label>Chủ đề:</label>
+                        <input type="text" class="form-control" placeholder="Chủ đề...." name="chude">
+                    </div>
+                    <div class="form-group">
+                        <label>Nội dung trả lời:</label>
+                        <textarea type="text" class="form-control" rows="3" name="noidungtraloi">
+
+                        </textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Gửi kết quả trả lời</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

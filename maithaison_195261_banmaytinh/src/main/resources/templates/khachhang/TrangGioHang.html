@@ -1,0 +1,375 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Trang giỏ hàng</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        body {
+            background-color: rgb(243, 239, 239);
+        }
+        
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .topnav {
+            overflow: hidden;
+            background-color: #e9e9e9;
+        }
+        
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .topnav a.active {
+            background-color: #2196F3;
+            color: white;
+        }
+        
+        .topnav .search-container {
+            float: right;
+        }
+        
+        .topnav input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+        }
+        
+        .topnav .search-container button {
+            float: right;
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .topnav .search-container button:hover {
+            background: #ccc;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <div style="width: 100%;height: 75px;background-color: red;">
+        <div style="float: left;width: 75px;height: 75px;margin-left: 30px;">
+            <a href="#">
+                <i class="fas fa-gem" style="color: gold;font-size: 35px;margin-top: 20px;margin-left: 20px;"></i>
+            </a>
+        </div>
+        <div style="float: left;height: 75px;">
+            <a href="#" style="text-decoration: none;">
+                <div style="font-size: 20px;font-style: italic;color: yellow;font-weight: bold;margin-top: 22px;">
+                    Thegioilaptop.com
+                </div>
+            </a>
+        </div>
+        <div style="float: left;margin-left: 550px;height: 75px;">
+            <div style="text-align: center;margin-top: 10px;">
+                <i class="fas fa-globe-asia" style="color: white;font-size: 30px;"></i>
+            </div>
+            <div style="color: white;font-weight: bold;">
+                Hàng mỹ
+            </div>
+        </div>
+        <div style="float: left;height: 75px;margin-left: 50px;">
+            <div style="text-align: center;margin-top: 10px;">
+                <i class="fas fa-newspaper" style="color: white;font-size: 30px;"></i>
+            </div>
+            <div style="color: white;font-weight: bold;">
+                Giỏ hàng
+            </div>
+        </div>
+        	
+        <div style="float: left;height: 75px;margin-left: 50px;">
+            <div style="text-align: center;margin-top: 10px;">
+                <i class="fas fa-cart-plus" style="color: white;font-size: 30px;"></i>
+            </div>
+            <div style="color: white;font-weight: bold;">
+            	<a th:href="@{/trangkhachhang/trangthongtinkhachhang/{makh}(makh=${hoten})}" th:text="${hoten}" style="text-decoration: none;color: white;"></a>                
+            </div>
+        </div>
+        
+        <div style="float: left;height: 75px;margin-left: 50px;">
+            <div style="text-align: center;margin-top: 10px;">
+                <i class="fas fa-cart-plus" style="color: white;font-size: 30px;"></i>
+            </div>
+            <div style="color: white;font-weight: bold;">
+                <a th:href="@{/dangxuat}" style="color: white;font-weight: bold;">Đăng xuất</a>
+            </div>
+        </div>
+        
+    </div>
+
+    <div style="margin-right: 50px;margin-left: 50px;margin-top: 10px;overflow: auto;">
+
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+                <li data-target="#demo" data-slide-to="4"></li>
+                <li data-target="#demo" data-slide-to="5"></li>
+                <li data-target="#demo" data-slide-to="6"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/AnhNen/anh1.png" alt="Los Angeles" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="/AnhNen/anh2.png" alt="Chicago" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="/AnhNen/anh3.png" alt="New York" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="/AnhNen/anh4.png" alt="New York" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="/AnhNen/anh5.png" alt="New York" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="/AnhNen/anh6.png" alt="New York" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="/AnhNen/anh7.png" alt="New York" width="1100" height="500">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+        <!--search bar-->
+        <div class="topnav bg-dark" style="margin-top: 25px;margin-left: 50px;margin-right: 50px;">
+            <a class="active" th:href="@{/trangchu}">Home</a>
+            <a th:href="@{/tranglaptop}" style="color: white;">Laptop</a>
+            <a href="#" style="color: white;">Điện thoại</a>
+            <a href="#" style="color: white;">Máy tính bảng</a>
+            <div class="search-container">
+                <form th:action="@{/trangtimkiemsanpham}">
+                    <input type="text" placeholder="Tên sản phẩm cần tìm.." name="tensanpham">
+                    <button type="submit">Tìm kiếm</button>
+                </form>
+            </div>
+        </div>
+
+        <!--Tieu de-->
+        <div style="overflow: auto;margin-top: 20px;margin-left: 200px;margin-right: 200px;">
+            <div style="float: left;">
+                GIỎ HÀNG CỦA BẠN (<span th:utext="${soluongsanpham1}"></span> SẢN PHẨM)
+            </div>
+            <div style="float: right;">
+                <a th:href="@{/trangchu}" style="font-size: 14px;">Mua thêm sản phẩm khác</a>
+            </div>
+        </div>
+
+        <div style="overflow: auto;margin-top: 5px;margin-left: 200px;margin-right: 200px;background-color: white;padding: 15px;">
+
+            <!--San pham dat vao gio-->
+            
+            	<div style="overflow: auto;border-bottom: 1px solid rgb(216, 215, 215);padding: 5px;">
+                <!--san pham chi tiet-->
+                <th:block th:each="dssp : ${danhsachsanpham}">
+                	<div style="clear: both;">
+	                	<div style="float: left;overflow: auto;padding: 10px;border: 1px solid rgb(211, 206, 206);">
+		                    <img src="/anh1.PNG" style="width: 125px;height: 125px;">
+		                </div>
+		                <!--ten-->
+		                <div style="float: left;overflow: auto;margin-left: 15px;font-weight: bold;">
+		                    <span th:utext="${dssp.tensanpham}"></span>
+		                    <br>
+		                </div>
+		                <!--gia-->
+		                <div style="float: left;overflow: auto;margin-left: 20px;">
+		                    <span th:utext="${dssp.gia} + 'USD'"></span>
+		                </div>
+		                <!--so luong-->
+		                <div style="float: left;overflow: auto;margin-left: 50px;">
+		                    <form th:action="@{/trangkhachhang/capnhatsoluong/{masanpham}(masanpham=${dssp.masanpham})}"> 
+		                        <input type="number" name="soluong" th:value="${dssp.soluong}" min="1" max="5">
+		                        <br>
+		                        <br>
+		                        <input type="submit" value="Chọn" class="btn btn-danger">
+		                    </form>
+		                </div>
+		                 <!--close-->
+		                <div style="float: left;overflow: auto;margin-left: 25px;">
+		                    <a th:href="@{/trangkhachhang/xulyxoakhoigiohang/{masanpham}(masanpham=${dssp.masanpham})}"><i class="fas fa-window-close"></i></a>
+		                </div>
+	                </div>
+                </th:block>               
+            </div>	
+            
+            <!--Tong tien-->
+            <div style="overflow: auto;clear: both;margin-top: 10px;">
+                <div style="float: right;font-weight: bold;">Tổng tiền:
+                    <span style="color: red;" th:utext="${tongtien} + 'USD'"></span>
+                </div>
+            </div>
+
+            <!--Thong tin khach hang-->
+            <div style="margin-top: 15px;overflow: auto;padding-left: 5px;padding-top: 5px;border-top: 1px solid rgb(211, 211, 211);">
+                <div style="font-weight: bold;color: red;font-size: 20px;">Thông tin khách hàng</div>
+                
+                <div class="form-group">
+                 	<label for="email">Họ tên:</label>
+                    <input type="text" disabled th:value="${ttkh.tenkhachhang}" class="form-control" id="email" placeholder="Nhập họ tên..." name="hoten">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Email:</label>
+                    <input type="text" disabled th:value="${ttkh.email}" class="form-control" id="pwd" placeholder="Nhập email..." name="email">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Số điện thoại:</label>
+                    <input type="text" disabled th:value="${ttkh.sodienthoai}" class="form-control" id="pwd" placeholder="Nhập số điện thoại..." name="sodienthoai">
+                </div>
+                <a th:href="@{/trangkhachhang/xuathoadon/{makh}(makh=${ttkh.makh})}" class="btn btn-primary">Xuất hóa đơn</a>
+                <a th:href="@{/trangkhachhang/chonthanhtoanpaypal/{makh}(makh=${ttkh.makh})}" class="btn btn-primary">Thanh toán bằng Paypal</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div style="background-color: white;overflow: auto;margin-top: 25px;">
+        <div style="margin-right: 100px;margin-left: 100px;margin-top: 25px;overflow: auto;">
+
+            <div style="float: left;margin-bottom: 25px;">
+                <div>
+                    <a style="font-size: 14px;" href="#">Giới thiệu về công ty</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Câu hỏi thường gặp mua hàng</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Chính sách bảo mật</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Quy chế hoạt động</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Kiểm tra hóa đơn điện tử</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Tra cứu thông tin bảo hành</a>
+                </div>
+            </div>
+
+            <div style="float: left;margin-left: 50px;">
+                <div>
+                    <a style="font-size: 14px;" href="#">Tin tuyển dụng</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Tin khuyến mãi</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Hướng dẫn mua online</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Hướng dẫn mua trả góp</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Chính sách trả góp</a>
+                </div>
+            </div>
+
+            <div style="float: left;margin-left: 50px;">
+                <div>
+                    <a style="font-size: 14px;" href="#">Hệ thống cửa hàng</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Hệ thống bảo hành</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Kiểm tra hàng Apple chính hãng</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Giới thiệu máy đổi trả</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Chính sách đổi trả</a>
+                </div>
+            </div>
+
+            <div style="float: left;margin-left: 50px;">
+                <div>
+                    <div>
+                        Tư vấn mua hàng (miễn phí)
+                    </div>
+                    <div>
+                        <a href="#" style="font-size: 20px;color: red;">1800 6601</a>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        Góp ý, khiếu nại dịch vụ
+                    </div>
+                    <div>
+                        <a href="#" style="font-size: 20px;color: red;">1800 6616</a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="float: left;margin-left: 50px;">
+                <div>
+                    Hỗ trợ thanh toán
+                </div>
+                <div>
+                    <i class="fab fa-cc-visa" style="font-size: 35px;color: rgb(58, 58, 255);"></i>
+                    <i class="fab fa-cc-paypal" style="font-size: 35px;color: rgb(0, 0, 190);"></i>
+                    <i class="fab fa-cc-stripe" style="font-size: 35px;color: red;"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

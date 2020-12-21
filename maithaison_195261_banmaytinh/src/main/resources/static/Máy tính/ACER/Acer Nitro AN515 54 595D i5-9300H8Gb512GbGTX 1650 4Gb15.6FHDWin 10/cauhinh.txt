@@ -1,0 +1,106 @@
+﻿Bộ xử lý
+Hãng CPU :	Intel
+Công nghệ CPU :	Core i5
+Loại CPU :	9300H
+Số lõi :	4
+Số luồng :	8
+Tốc độ CPU :	2.40 GHz
+Tốc độ tối đa :	4.10 GHz
+Bộ nhớ đệm :	8 MB Smart Cache
+Tốc độ BUS :	8 GT/s
+RAM
+Dung lượng RAM :	8 GB
+Loại RAM :	DDR4
+Tốc độ RAM :	2400 MHz
+Số khe cắm rời :	2
+Số khe RAM còn lại :	1
+Số RAM onboard :	Đang cập nhật
+Hỗ trợ RAM tối đa :	32 GB
+Màn hình
+Kích thước màn hình :	15.6"
+Loại màn hình :	LED
+Độ phân giải :	1920 x 1080 Pixel
+Tần số quét :	60 Hz
+Độ sáng :	Đang cập nhật
+Tấm nền :	IPS
+Công nghệ màn hình :	LED-backlit
+Độ phủ màu :	Đang cập nhật
+Tỷ lệ màn hình :	16:09
+Độ tương phản :	Đang cập nhật
+Màn hình cảm ứng :	Không
+Loại cảm ứng :	Không
+Đồ họa
+Hãng (Card onboard) :	Intel
+Card onboard :	UHD Graphics
+Model (Card onboard) :	630
+Xung nhịp (Card onboard) :	Đang cập nhật
+Xung nhịp tối đa (Card onboard) :	Đang cập nhật
+Lưu trữ
+Kiểu SSD :	M2. PCIe
+Dung lượng SSD :	512 GB
+Tốc độ đọc/ghi :	Đang cập nhật
+Hỗ trợ công nghệ Optane :	Có
+Tổng số khe cắm SSD/HDD :	3
+Số khe SSD/HDD còn lại :	2
+Chuẩn M2 :	Đang cập nhật
+Giao tiếp & Kết nối
+Số cổng Type-C :	1
+Số cổng USB 3.0 :	2
+Số cổng USB 2.0 :	1
+Số cổng HDMI :	1
+Số cổng VGA :	Đang cập nhật
+Số cổng Card reader :	Đang cập nhật
+Số cổng DC-in jack :	1
+Số cổng 3.5 mm :	1
+Số cổng Thunderbolt :	Đang cập nhật
+Số cổng LAN :	Đang cập nhật
+Wireless :	802.11 ax
+Bluetooth :	Đang cập nhật
+Khe đọc thẻ nhớ :	N/A
+Senser :	Không
+Webcame :	HD Web Camera
+Âm thanh
+Số Loa :	2
+Công nghệ âm thanh :	Acer TrueHarmony
+Bảo mật
+Mở khóa vân tay (Finger Print) :	Không
+Nhận diện khuôn mặt :	Không
+Mật khẩu :	Không
+Ổ đĩa quang
+Loại ổ đĩa quang :	Đang cập nhật
+Ổ đĩa quang :	Không
+Bàn phím & TouchPad
+Kiểu bàn phím :	Đang cập nhật
+Bàn phím số :	Có
+Loại đèn bàn phím :	LED
+Công nghệ đèn bàn phím :	Đơn sắc
+Màu đèn LED :	Red
+TouchPad :	Đang cập nhật
+Thông tin pin
+Loại PIN :	Lithium-Polymer
+PIN (Cell) :	4 Cell
+PIN có thể tháo rời :	Không
+Power Supply :	Đang cập nhật
+Hệ điều hành
+OS :	Windows 10
+Type :	64 bit
+Version :	Home
+Thiết kế & Trọng lượng
+Width (mm) :	Đang cập nhật
+Depth (mm) :	Đang cập nhật
+Height (mm) :	Đang cập nhật
+Trọng lượng (kg) :	2.3
+Chất liệu mặt bên ngoài cùng :	Nhựa
+Chất liệu khung màn hình :	Nhựa
+Chất liệu mặt bàn phím + kê tay :	Nhựa
+Chất liệu mặt lưng :	Nhựa
+Thông tin thêm
+Bản lề (Hinge / Kickstand) :	Đang cập nhật
+Tản nhiệt :	Đang cập nhật
+Thông tin hàng hóa
+P/N :	NH.Q59SV.025
+Năm ra mắt :	2019
+Xuất xứ :	Trung Quốc
+Thời gian bảo hành :	12 Tháng
+Phụ kiện trong hộp
+Phụ kiện kèm theo :	Sạc, sách HD

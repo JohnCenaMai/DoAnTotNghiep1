@@ -1,0 +1,726 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Trang chi tiết sản phẩm</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        body {
+            background-color: rgb(243, 239, 239);
+        }
+        
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .topnav {
+            overflow: hidden;
+            background-color: #e9e9e9;
+        }
+        
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .topnav a.active {
+            background-color: #2196F3;
+            color: white;
+        }
+        
+        .topnav .search-container {
+            float: right;
+        }
+        
+        .topnav input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+        }
+        
+        .topnav .search-container button {
+            float: right;
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .topnav .search-container button:hover {
+            background: #ccc;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .heading {
+            font-size: 25px;
+            margin-right: 25px;
+        }
+        
+        .fa {
+            font-size: 25px;
+        }
+        
+        .checked {
+            color: orange;
+        }
+        /* Three column layout */
+        
+        .side {
+            float: left;
+            width: 15%;
+            margin-top: 10px;
+        }
+        
+        .middle {
+            margin-top: 10px;
+            float: left;
+            width: 70%;
+        }
+        /* Place text to the right */
+        
+        .right {
+            text-align: right;
+        }
+        /* Clear floats after the columns */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* The bar container */
+        
+        .bar-container {
+            width: 100%;
+            background-color: #f1f1f1;
+            text-align: center;
+            color: white;
+        }
+        /* Individual bars */
+        
+        .bar-5 {
+            width: 60%;
+            height: 18px;
+            background-color: #4CAF50;
+        }
+        
+        .bar-4 {
+            width: 30%;
+            height: 18px;
+            background-color: #2196F3;
+        }
+        
+        .bar-3 {
+            width: 10%;
+            height: 18px;
+            background-color: #00bcd4;
+        }
+        
+        .bar-2 {
+            width: 4%;
+            height: 18px;
+            background-color: #ff9800;
+        }
+        
+        .bar-1 {
+            width: 15%;
+            height: 18px;
+            background-color: #f44336;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <div style="width: 100%;height: 75px;background-color: red;">
+        <div style="float: left;width: 75px;height: 75px;margin-left: 30px;">
+            <a href="#">
+                <i class="fas fa-gem" style="color: gold;font-size: 35px;margin-top: 20px;margin-left: 20px;"></i>
+            </a>
+        </div>
+        <div style="float: left;height: 75px;">
+            <a href="#" style="text-decoration: none;">
+                <div style="font-size: 20px;font-style: italic;color: yellow;font-weight: bold;margin-top: 22px;">
+                    Thegioilaptop.com
+                </div>
+            </a>
+        </div>
+        <div style="float: left;margin-left: 550px;height: 75px;">
+            <div style="text-align: center;margin-top: 10px;">
+                <i class="fas fa-globe-asia" style="color: white;font-size: 30px;"></i>
+            </div>
+            <div style="color: white;font-weight: bold;">
+                Hàng mỹ
+            </div>
+        </div>
+        <div style="float: left;height: 75px;margin-left: 50px;">
+            <div style="text-align: center;margin-top: 10px;">
+                <i class="fas fa-newspaper" style="color: white;font-size: 30px;"></i>
+            </div>
+            <div style="color: white;font-weight: bold;">
+                Giỏ hàng
+            </div>
+        </div>
+        <div style="float: left;height: 75px;margin-left: 50px;">
+            <div style="text-align: center;margin-top: 10px;">
+                <i class="fas fa-cart-plus" style="color: white;font-size: 30px;"></i>
+            </div>
+            <div style="color: white;font-weight: bold;">
+                Giỏ hàng
+            </div>
+        </div>
+        <div style="float: left;height: 75px;margin-left: 50px;">
+            <div style="text-align: center;margin-top: 10px;">
+                <i class="fas fa-cart-plus" style="color: white;font-size: 30px;"></i>
+            </div>
+            <div style="color: white;font-weight: bold;">
+                <a th:href="@{/dangxuat}" style="color: white;font-weight: bold;">Đăng xuất</a>
+            </div>
+        </div>
+    </div>
+
+    <!--common frame-->
+    <div style="margin-right: 50px;margin-left: 50px;margin-top: 10px;overflow: auto;">
+        <!--carousel-->
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+                <li data-target="#demo" data-slide-to="4"></li>
+                <li data-target="#demo" data-slide-to="5"></li>
+                <li data-target="#demo" data-slide-to="6"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/AnhNen/anh1.png" alt="Los Angeles" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="/AnhNen/anh2.png" alt="Chicago" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="/AnhNen/anh3.png" alt="New York" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="/AnhNen/anh4.png" alt="New York" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="/AnhNen/anh5.png" alt="New York" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="/AnhNen/anh6.png" alt="New York" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="/AnhNen/anh7.png" alt="New York" width="1100" height="500">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+        <!--search bar-->
+        <div class="topnav bg-dark" style="margin-top: 25px;margin-left: 50px;margin-right: 50px;">
+            <a class="active" th:href="@{/trangchu}">Home</a>
+            <a th:href="@{/tranglaptop}" style="color: white;">Laptop</a>
+            <a href="#" style="color: white;">Điện thoại</a>
+            <a href="#" style="color: white;">Máy tính bảng</a>
+            <div class="search-container">
+                <form th:action="@{/trangtimkiemsanpham}">
+                    <input type="text" placeholder="Tên sản phẩm cần tìm.." name="tensanpham">
+                    <button type="submit">Tìm kiếm</button>
+                </form>
+            </div>
+        </div>
+
+        <!--computer in detail-->
+        <div style="background-color: white;overflow: auto;margin-top: 25px;">
+
+            <div style="padding: 15px;font-weight: bold;font-size: 20px;">
+                <span th:text="${chitietsanpham.tensanpham}"></span>
+            </div>
+
+            <div>
+                <!--<div style="float: left;overflow: auto;padding-left: 15px;padding-bottom: 15px;padding-right: 15px;">
+		            <img src="/anh1.PNG" style="width: 450px;height: 400px;">
+		        </div> 
+		        -->
+                <div id="demo1" class="carousel slide" data-ride="carousel" style="float: left;overflow: auto;padding-left: 15px;padding-bottom: 15px;padding-right: 15px;width: 600px;height: 400px;">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+
+                        <th:block th:each="chimuc,state1 : ${chitiethinhanh}">
+                            <li data-target="#demo1" th:attr="data-slide-to=${state1.index}"></li>
+                        </th:block>
+
+                        <!-- 
+                        	<li data-target="#demo1" data-slide-to="0" class="active"></li>
+                        	<li data-target="#demo1" data-slide-to="1"></li>
+                        	<li data-target="#demo1" data-slide-to="2"></li>
+                         -->
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <th:block th:each="ctha,state : ${chitiethinhanh}">
+
+                            <th:block th:if="${state.index} == 0">
+                                <div class="carousel-item active">
+                                    <img th:src="@{${ctha.hinhanh}}" alt="Los Angeles" style="width: 550px;height: 385px;">
+                                </div>
+                            </th:block>
+                            <th:block th:unless="${state.index} == 0">
+                                <div class="carousel-item">
+                                    <img th:src="@{${ctha.hinhanh}}" alt="Los Angeles" style="width: 550px;height: 385px;">
+                                </div>
+                            </th:block>
+
+                        </th:block>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo1" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo1" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+
+                <div style="float: left;overflow: auto;width: 400px;">
+
+                    <!--price-->
+                    <div style="width: 100%;overflow: auto;">
+                        <div style="width: 47%;float: left;background-color: rgb(202, 197, 197);padding-left: 20px;padding-right: 20px;padding-top: 5px;padding-bottom: 5px;">
+                            <div style="font-weight: bold;text-align: center;">
+                                Mua online giá sốc
+                            </div>
+                            <div style="font-weight: bold;text-align: center;">
+                                <span style="color: red;font-weight: bold;" th:text="${chitietsanpham.gia} + ' USD'"></span>
+                            </div>
+                        </div>
+                        <div style="width: 50%;float: left;margin-left: 11px;background-color: rgb(202, 197, 197);padding-left: 20px;padding-right: 20px;padding-top: 5px;padding-bottom: 5px;">
+                            <div style="font-weight: bold;text-align: center;">
+                                Giá thường
+                            </div>
+                            <div style="font-weight: bold;text-align: center;">
+                                <span style="color: red;font-weight: bold;" th:text="${chitietsanpham.gia} + 125 + ' USD'"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--khuyen mai dac biet-->
+                    <div style="margin-top: 10px;">
+
+                        <div style="padding: 5px;background-color: rgb(4, 180, 4);overflow: auto;color: white;font-weight: bold;font-size: 14px;">
+                            Khuyến mãi đặc biệt (giới hạn)
+                        </div>
+
+                        <div style="padding: 15px;overflow: auto;border: 1px solid rgb(230, 224, 224);">
+                            <div style="font-size: 14px;color: red;font-weight: bold;">
+                                Giá đặc biệt khi mua Online đến 30/09: 765 USD
+                            </div>
+                            <div style="font-size: 12px;color: black;font-weight: bold;margin-top: 15px;">
+                                Hoặc chọn 1 trong 2 khuyến mại khi mua với giá thường: <br>802 USD
+                            </div>
+                            <div style="font-size: 12px;color: black;font-weight: bold;margin-top: 15px;">
+                                Khách hàng được khuyến mại thêm:
+                                <ul>
+                                    <li>Giảm ngay 40% khi mua màn hình LCD Samsung kèm <br>Laptop</li>
+                                    <li>Tặng PMH 150 USD mua máy in HP</li>
+                                    <li>Tặng Balo Laptop</li>
+                                    <li>Combo Sinh viên Microsoft 365 Personal + Lạc Việt <br>giá chỉ còn 300USD</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--Mua ngay-->
+                    <div style="margin-top: 10px;overflow: auto;margin-bottom: 10px;">
+                        <a th:href="@{/trangkhachhang/xulythemvaogiohang/{masanpham}(masanpham=${chitietsanpham.mamaytinh})}" type="button" style="width: 100%;background-color: red;color: white;">
+                            <div style="text-align: center;padding-top: 5px;font-size: 25px;">
+                                Mua ngay
+                            </div>
+                            <div style="text-align: center;padding-bottom: 5px;font-size: 14px;">
+                                Giao hàng trong 1 giờ hoặc nhận tại shop
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div style="float: left;overflow: auto;padding: 5px;">
+                    <h5 style="font-weight: bold;margin-left: 20px;">FPT shop cam kết</h5>
+                    <ul>
+                        <li>Hàng chính hãng</li>
+                        <li>Giao hàng miễn phí toàn quốc trong 60<br> phút</li>
+                        <li>Bảo hành nhanh tại FPT Shop trên toàn<br> quốc</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--computer's component-->
+        <div style="background-color: white;margin-top: 10px;overflow: auto;">
+            <div style="text-align: center;overflow: auto;padding-top: 15px;font-size: 25px;font-weight: bold;padding-bottom: 10px;">
+                Thông số kỹ thuật
+            </div>
+            <div style="width: 100%;">
+                <div style="float: left;width: 33.33%;height: 265px;padding: 15px;background-color: green;color: white;">
+                    <ul style="color: white;">
+                        <li th:utext="'Hãng CPU: ' + ${chitietboxuly.hangcpu}"></li>
+                        <li th:utext="'Công nghệ CPU: ' + ${chitietboxuly.congnghecpu}"></li>
+                        <li th:utext="'Loại CPU: ' + ${chitietboxuly.loaicpu}"></li>
+                        <li th:utext="'Tốc độ CPU: ' + ${chitietboxuly.tocdo} + ' GHz'"></li>
+                        <li th:utext="'Tốc độ tối đa: ' + ${chitietboxuly.tocdotoida} + ' GHz'"></li>
+                        <li th:utext="'Bộ nhớ đệm: ' + ${chitietboxuly.bonhodem} + ' MB Cache'"></li>
+                        <li th:utext="'Tốc độ BUS: ' + ${chitietboxuly.tocdobus} + ' MHz'"></li>
+                        <li th:utext="'Số luồng: ' + ${chitietboxuly.soluong}"></li>
+                        <li th:utext="'Số lõi: ' + ${chitietboxuly.soloi}"></li>
+                    </ul>
+                </div>
+                <div style="float: left;width: 33.33%;height: 265px;padding: 15px;background-color: red;color: white;">
+                    <ul style="color: white;">
+                        <li th:utext="'Dung lượng RAM: ' + ${chitietram.dungluong} + ' GB'"></li>
+                        <li th:utext="'Loại RAM: ' + ${chitietram.loairam}"></li>
+                        <li th:utext="'Tốc độ RAM: ' + ${chitietram.tocdoram}"></li>
+                        <li th:utext="'Số khe cắm rời: ' + ${chitietram.sokhecamroi}"></li>
+                        <li th:utext="'Số khe ram còn lại: ' + ${chitietram.sokheramconlai}"></li>
+                        <li th:utext="'Số RAM onboard: ' + ${chitietram.soramonboard}"></li>
+                        <li th:utext="'Hỗ trợ RAM tối đa: ' + ${chitietram.soramtoida}"></li>
+                    </ul>
+                </div>
+                <div style="float: left;width: 33.33%;height: 265px;padding: 15px;background-color: green;color: white;">
+                    <ul style="color: white;">
+                        <li th:utext="'Loại cảm ứng: ' + ${chitietmanhinh.loaicamung}"></li>
+                        <li th:utext="'Màn hình cảm ứng: ' + ${chitietmanhinh.loaicamung}"></li>
+                        <li th:utext="'Độ tương phản: ' + ${chitietmanhinh.dotuongphan}"></li>
+                        <li th:utext="'Tỷ lệ màn hình: ' + ${chitietmanhinh.tylemanhinh}"></li>
+                        <li th:utext="'Độ phủ màu: ' + ${chitietmanhinh.dophumau}"></li>
+                        <li th:utext="'Công nghệ: ' + ${chitietmanhinh.congnghe}"></li>
+                        <li th:utext="'Độ sáng: ' + ${chitietmanhinh.dosang}"></li>
+                        <li th:utext="'Độ phân giải: ' + ${chitietmanhinh.dophangiai}"></li>
+                        <li th:utext="'Tần số quét: ' + ${chitietmanhinh.tansoquet}"></li>
+                        <li th:utext="'Loại màn hình: ' + ${chitietmanhinh.loaimanhinh}"></li>
+                        <li th:utext="'Kích thước màn hình: ' + ${chitietmanhinh.kichthuocmanhinh}"></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="width: 100%;">
+                <div style="float: left;width: 33.33%;height: 265px;padding: 15px;background-color: red;color: white;">
+                    <ul style="color: white;">
+                        <li th:utext="'Hãng: ' + ${chitietdohoa.hang}"></li>
+                        <li th:utext="'Xung nhịp: ' + ${chitietdohoa.xungnhip}"></li>
+                        <li th:utext="'Xung nhịp tối đa: ' + ${chitietdohoa.xungnhiptoida}"></li>
+                        <li th:utext="'Model: ' + ${chitietdohoa.model}"></li>
+                        <li th:utext="'Card on board: ' + ${chitietdohoa.cardonboard}"></li>
+                    </ul>
+                </div>
+                <div style="float: left;width: 33.33%;height: 265px;padding: 15px;background-color: green;color: white;">
+                    <ul style="color: white;">
+                        <li th:utext="'Kiểu: ' + ${chitietbonho.kieu}"></li>
+                        <li th:utext="'Dung lượng: ' + ${chitietbonho.dungluong} + ' GB'"></li>
+                        <li th:utext="'Tốc độ đọc ghi: ' + ${chitietbonho.tocdodocghi}"></li>
+                        <li th:utext="'Số khe cắm: ' + ${chitietbonho.sokhecam}"></li>
+                    </ul>
+                </div>
+                <div style="float: left;width: 33.33%;height: 265px;padding: 15px;background-color: red;color: white;">
+                    <ul style="color: white;">
+                        <li th:utext="'Số loa: ' + ${chitietamthanh.soloa}"></li>
+                        <li th:utext="'Công nghệ âm thanh: ' + ${chitietamthanh.congngheamthanh}"></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="width: 100%;">
+                <div style="float: left;width: 33.33%;height: 265px;padding: 15px;background-color: green;color: white;">
+                    <ul style="color: white;">
+                        <li th:utext="'Kiểu bàn phím: ' + ${chitietbanphim.kieubanphim}"></li>
+                        <li th:utext="'Bàn phím số: ' + ${chitietbanphim.banphimso}"></li>
+                        <li th:utext="'Loại đèn bàn phím: ' + ${chitietbanphim.loaidenbanphim}"></li>
+                        <li th:utext="'Màu đèn led: ' + ${chitietbanphim.maudenled}"></li>
+                        <li th:utext="'Công nghệ đèn bàn phím: ' + ${chitietbanphim.congnghedenbanphim}"></li>
+                        <li th:utext="'Chi tiết bàn phím: ' + ${chitietbanphim.touchpad}"></li>
+                    </ul>
+                </div>
+                <div style="float: left;width: 33.33%;height: 265px;padding: 15px;background-color: red;color: white;">
+                    <ul style="color: white;">
+                        <li th:utext="'Loại pin: ' + ${chitietpin.loaipin}"></li>
+                        <li th:utext="'Số cell: ' + ${chitietpin.cell}"></li>
+                        <li th:utext="'Tháo rời: ' + ${chitietpin.thaoroi}"></li>
+                        <li th:utext="'Nguồn cung cấp: ' + ${chitietpin.powersupply}"></li>
+                    </ul>
+                </div>
+                <div style="float: left;width: 33.33%;height: 265px;padding: 15px;background-color: green;color: white;">
+                    <ul style="color: white;">
+                        <li th:utext="'Tên: ' + ${chitiethdh.ten}"></li>
+                        <li th:utext="'Kiểu: ' + ${chitiethdh.kieu}"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--rating and comment-->
+        <div style="margin-top: 10px;width: 100%;overflow: auto;">
+            <div style="float: left;width: 40%;overflow: auto;padding: 15px;background-color: white">
+                <span class="heading">Đánh giá người dùng</span>
+                <br>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <p>4.1 average based on 254 reviews.</p>
+                <hr style="border:3px solid #f1f1f1">
+                <div class="row" style="padding: 15px;">
+                    <div class="side">
+                        <div>5 star</div>
+                    </div>
+                    <div class="middle">
+                        <div class="bar-container">
+                            <div class="bar-5"></div>
+                        </div>
+                    </div>
+                    <div class="side right">
+                        <div>150</div>
+                    </div>
+                    <div class="side">
+                        <div>4 star</div>
+                    </div>
+                    <div class="middle">
+                        <div class="bar-container">
+                            <div class="bar-4"></div>
+                        </div>
+                    </div>
+                    <div class="side right">
+                        <div>63</div>
+                    </div>
+                    <div class="side">
+                        <div>3 star</div>
+                    </div>
+                    <div class="middle">
+                        <div class="bar-container">
+                            <div class="bar-3"></div>
+                        </div>
+                    </div>
+                    <div class="side right">
+                        <div>15</div>
+                    </div>
+                    <div class="side">
+                        <div>2 star</div>
+                    </div>
+                    <div class="middle">
+                        <div class="bar-container">
+                            <div class="bar-2"></div>
+                        </div>
+                    </div>
+                    <div class="side right">
+                        <div>6</div>
+                    </div>
+                    <div class="side">
+                        <div>1 star</div>
+                    </div>
+                    <div class="middle">
+                        <div class="bar-container">
+                            <div class="bar-1"></div>
+                        </div>
+                    </div>
+                    <div class="side right">
+                        <div>20</div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="padding: 15px;float: left;width: 58%;margin-left: 25px;overflow: auto;background-color: white">
+                <div style="font-weight: bold;font-size: 20px;">
+                    Bình luận và đánh giá
+                </div>           
+                <form th:action="@{/trangkhachhang/luubinhluan/{masanpham}(masanpham=${chitietsanpham.mamaytinh})}" style="margin-top: 10px;">
+                    <div class="form-group">
+                        <textarea placeholder="Viết bình luận...." class="form-control" rows="2" id="comment" name="binhluan"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Gửi bình luận</button>
+                </form>
+                
+                <div style="margin-top: 15px;">
+                    <p>phần bình luận của khách hàng</p>
+                    <!--phan comment-->
+                    <div>
+                    	<th:block th:each="bl:${chitietbinhluan}">
+                    		<th:block th:unless="${bl.binhluan.chophepan}">
+                    			<div>
+		                            <span style="color: blue;" th:utext="'Được đăng bởi: #' + ${bl.binhluan.makhachhang}"></span>
+		                            <span style="color: green;" th:utext="',vào ngày: ' + ${bl.binhluan.ngaybinhluan}"></span>
+		                        </div>
+		                        <!--nội dung bình luận-->
+		                        <div>
+		                            <span style="color: red;" th:utext="'Nội dung: ' + ${bl.binhluan.noidung}"></span>
+		                            <th:block th:if="${vaitro} == 'ROLE_ADMIN'">
+		                            	<span style="color: green;margin-left: 25px;">
+		                            		<a th:href="@{/trangquantri/chophepanbinhluan/{masanpham}/{mabinhluan}(masanpham=${chitietsanpham.mamaytinh},mabinhluan=${bl.binhluan.mabinhluan})}">
+		                            			Nội dung xấu, cho phép ẩn
+		                            		</a>
+		                            	</span> 
+		                            </th:block>                                    
+		                        </div>	                                           
+		                        <th:block th:each="ph:${bl.phanhois}">
+				                	<div style="margin-left: 30px;padding: 10px;">
+				                        <span th:utext="${ph.noidung}"></span>
+				                    </div>
+				                </th:block>  	
+				                <p style="margin-left: 30px;">Trả lời</p>
+		                        <form th:action="@{/trangkhachhang/luuphanhoi/{masanpham}/{mabinhluan}(masanpham=${chitietsanpham.mamaytinh},mabinhluan=${bl.binhluan.mabinhluan})}" style="margin-top: 0px;margin-left: 30px;">
+		                            <div class="form-group">
+		                                <textarea placeholder="Viết bình luận...." class="form-control" rows="2" name="phanhoi"></textarea>
+		                            </div>
+		                            <button type="submit" class="btn btn-success">Lưu phản hồi</button>
+		                        </form> 
+                    		</th:block>	
+                        </th:block>     
+                    </div>
+                </div>
+                          
+            </div>
+        </div>
+    </div>
+
+    <div style="background-color: white;overflow: auto;margin-top: 25px;">
+        <div style="margin-right: 100px;margin-left: 100px;margin-top: 25px;overflow: auto;">
+
+            <div style="float: left;margin-bottom: 25px;">
+                <div>
+                    <a style="font-size: 14px;" href="#">Giới thiệu về công ty</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Câu hỏi thường gặp mua hàng</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Chính sách bảo mật</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Quy chế hoạt động</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Kiểm tra hóa đơn điện tử</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Tra cứu thông tin bảo hành</a>
+                </div>
+            </div>
+
+            <div style="float: left;margin-left: 50px;">
+                <div>
+                    <a style="font-size: 14px;" href="#">Tin tuyển dụng</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Tin khuyến mãi</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Hướng dẫn mua online</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Hướng dẫn mua trả góp</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Chính sách trả góp</a>
+                </div>
+            </div>
+
+            <div style="float: left;margin-left: 50px;">
+                <div>
+                    <a style="font-size: 14px;" href="#">Hệ thống cửa hàng</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Hệ thống bảo hành</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Kiểm tra hàng Apple chính hãng</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Giới thiệu máy đổi trả</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Chính sách đổi trả</a>
+                </div>
+            </div>
+
+            <div style="float: left;margin-left: 50px;">
+                <div>
+                    <div>
+                        Tư vấn mua hàng (miễn phí)
+                    </div>
+                    <div>
+                        <a href="#" style="font-size: 20px;color: red;">1800 6601</a>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        Góp ý, khiếu nại dịch vụ
+                    </div>
+                    <div>
+                        <a href="#" style="font-size: 20px;color: red;">1800 6616</a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="float: left;margin-left: 50px;">
+                <div>
+                    Hỗ trợ thanh toán
+                </div>
+                <div>
+                    <i class="fab fa-cc-visa" style="font-size: 35px;color: rgb(58, 58, 255);"></i>
+                    <i class="fab fa-cc-paypal" style="font-size: 35px;color: rgb(0, 0, 190);"></i>
+                    <i class="fab fa-cc-stripe" style="font-size: 35px;color: red;"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

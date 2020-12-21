@@ -1,0 +1,1007 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Trang chủ</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        body {
+            background-color: rgb(245, 245, 245);
+        }
+        
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .topnav {
+            overflow: hidden;
+        }
+        
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .topnav a.active {
+            background-color: #2196F3;
+            color: white;
+        }
+        
+        .topnav .search-container {
+            float: right;
+        }
+        
+        .topnav input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+        }
+        
+        .topnav .search-container button {
+            float: right;
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .topnav .search-container button:hover {
+            background: #ccc;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .gioithieu:hover {
+            border: 1px solid rgb(114, 109, 109);
+        }
+        
+        .hieuung:hover {
+            opacity: 0.5;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <div style="width: 100%;height: 75px;background-color: red;">
+        <div style="float: left;width: 75px;height: 75px;margin-left: 30px;">
+            <a href="#">
+                <i class="fas fa-gem" style="color: gold;font-size: 35px;margin-top: 20px;margin-left: 20px;"></i>
+            </a>
+        </div>
+        <div style="float: left;height: 75px;">
+            <a href="#" style="text-decoration: none;">
+                <div style="font-size: 20px;font-style: italic;color: yellow;font-weight: bold;margin-top: 22px;">
+                    Thegioilaptop.com
+                </div>
+            </a>
+        </div>
+        
+        <div style="float: left;margin-left: 550px;height: 75px;">
+            <div style="text-align: center;margin-top: 10px;">
+                <i class="fas fa-globe-asia" style="color: white;font-size: 30px;"></i>
+            </div>
+            <div style="color: white;font-weight: bold;">
+                Hàng mỹ
+            </div>
+        </div>
+      
+        <div style="float: left;height: 75px;margin-left: 50px;">
+            <div style="text-align: center;margin-top: 10px;">
+                <i class="fas fa-cart-plus" style="color: white;font-size: 30px;"></i>
+            </div>
+            <div style="color: white;font-weight: bold;">
+                <a th:href="@{/trangkhachhang/tranggiohang/{makh}(makh=${hoten})}" style="text-decoration: none;color: white;">Giỏ hàng</a>                
+            </div>
+        </div>
+        
+        <div style="float: left;height: 75px;margin-left: 50px;">
+            <div style="text-align: center;margin-top: 10px;">
+                <i class="fas fa-cart-plus" style="color: white;font-size: 30px;"></i>
+            </div>
+            <div style="color: white;font-weight: bold;">
+            	<a th:href="@{/trangkhachhang/trangthongtinkhachhang/{makh}(makh=${hoten})}" th:text="${hoten}" style="text-decoration: none;color: white;"></a>                
+            </div>
+        </div>
+        
+        <div style="float: left;height: 75px;margin-left: 50px;">
+            <div style="text-align: center;margin-top: 10px;">
+                <i class="fas fa-cart-plus" style="color: white;font-size: 30px;"></i>
+            </div>
+            <div style="color: white;font-weight: bold;">
+                <a th:href="@{/dangxuat}" style="color: white;font-weight: bold;">Đăng xuất</a>
+            </div>
+        </div>
+        
+    </div>
+
+    <div style="margin-right: 50px;margin-left: 50px;margin-top: 10px;overflow: auto;">
+
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+                <li data-target="#demo" data-slide-to="4"></li>
+                <li data-target="#demo" data-slide-to="5"></li>
+                <li data-target="#demo" data-slide-to="6"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/AnhNen/anh1.png" alt="Los Angeles" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="/AnhNen/anh2.png" alt="Chicago" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="/AnhNen/anh3.png" alt="New York" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="/AnhNen/anh4.png" alt="New York" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="/AnhNen/anh5.png" alt="New York" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="/AnhNen/anh6.png" alt="New York" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="/AnhNen/anh7.png" alt="New York" width="1100" height="500">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+        <!--search bar-->
+        <div class="topnav bg-dark" style="margin-top: 25px;margin-left: 50px;margin-right: 50px;">
+            <a th:href="@{/trangdangnhap}" type="button" class="btn btn-info btn-lg" style="color: white;">Đăng nhập</a>
+            <a th:href="@{/tranglaptop}" style="color: white;">Laptop</a>
+            <a href="#" style="color: white;">Điện thoại</a>
+            <a href="#" style="color: white;">Máy tính bảng</a>
+            <a href="#" data-toggle="modal" data-target="#tuongtacvoituvanvien" style="color: white;">Tư vấn, hỏi đáp</a>
+            <div class="search-container">
+                <form th:action="@{/trangtimkiemsanpham}">
+                    <input type="text" placeholder="Tên sản phẩm cần tìm..." name="tensanpham">
+                    <button type="submit">Tìm kiếm</button>
+                </form>
+            </div>
+        </div>
+        
+        <div id="tuongtacvoituvanvien" class="modal fade" role="dialog">
+	        <div class="modal-dialog">
+	            <!-- Modal content-->
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <h4 class="modal-title">Gửi câu hỏi cho tư vấn viên.</h4>
+	                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+	                </div>
+	                <div class="modal-body">
+	                    <form th:action="@{/hoidaptuvanvien}">
+	                        <div class="form-group">
+	                            <label for="email">Địa chỉ email:</label>
+	                            <input type="text" class="form-control" name="email" placeholder="Nhập email....">
+	                        </div>
+	                        <div class="form-group">
+	                            <label>Chủ đề:</label>
+	                            <input type="text" class="form-control" name="chude" placeholder="Chủ đề....">
+	                        </div>
+	                        <div class="form-group">
+	                            <label>Nội dung:</label>
+	                            <textarea placeholder="Viết nội dung...." class="form-control" rows="3" name="noidung"></textarea>
+	                        </div>
+	                        <button type="submit" class="btn btn-primary">Gửi câu hỏi</button>
+	                    </form>
+	                </div>
+	                <div class="modal-footer">
+	                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+        
+        <div class="container main-content list" style="margin-top:15px">
+		  <div th:if="${success}" class="row alert alert-success alert-dismissible">
+		   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		    <span aria-hidden="true">×</span>
+		   </button>
+		   <span th:text="${success}"></span>
+		  </div>
+		</div>
+        
+        <!-- Form đăng nhập -->
+		<div class="modal fade" id="myModal" role="dialog">
+		    <div class="modal-dialog">
+		        <!-- Modal content-->
+		        <div class="modal-content">
+		            <div class="modal-header">
+		                <h4 class="modal-title">Form đăng nhập</h4>
+		                <button type="button" class="close" data-dismiss="modal">&times;</button>
+		            </div>
+		            <div class="modal-body">
+		                <form th:action="@{/xacthuc}" method="post">
+		                    <div class="form-group">
+		                        <label for="email">Email:</label>
+		                        <input type="email" class="form-control" id="email" placeholder="Nhập email" name="email">
+		                    </div>
+		                    <div class="form-group">
+		                        <label for="pwd">Mật khẩu:</label>
+		                        <input type="password" class="form-control" id="pwd" placeholder="Nhập mật khẩu" name="matkhau">
+		                    </div>
+		                    <div class="form-group form-check">
+		                        <label class="form-check-label">
+		                            <input class="form-check-input" type="checkbox" name="remember"> Remember me
+		                        </label>
+		                        <a href="#" class="text-info" style="margin-left: 30px;">
+		                            Bạn chưa có tài khoản, hãy đăng ký tại đây
+		                        </a>
+		                    </div>
+		                    <button type="submit" class="btn btn-primary">Đăng nhập</button>
+		                </form>
+		                <div style="margin-top: 15px;width: 100%;">
+		                    <a href="#" class="btn btn-warning" style="color: white;width: 100%;text-align: center;">
+		                        Đăng nhập bằng tài khoản google
+		                        <i class="fab fa-google-plus-g"></i>
+		                    </a>
+		                </div>
+		            </div>
+		            <div class="modal-footer">
+		                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+
+        <!--form gioi thieu-->
+        <div style="margin-top: 10px;padding: 15px;">
+
+            <div class="row">
+                <div class="card hieuung" style="width: 16.65%;height: 200px;">
+                    <img class="card-img-top rounded-circle" src="/DienThoai/anh1.PNG" style="width:100%;height: 60%;padding-left: 50px;padding-right: 50px;margin-top: 10px;">
+                    <div class="card-body">
+                        <a href="#" class="card-title stretched-link" style="text-decoration: none;">
+                            <div style="text-align: center;color: black;font-size: 16px;font-weight: bold;">
+                                Điện thoại
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card hieuung" style="width: 16.65%;height: 200px;">
+                    <img class="card-img-top rounded-circle" src="/DienThoai/anh2.PNG" style="width:100%;height: 60%;padding-left: 50px;padding-right: 50px;margin-top: 10px;">
+                    <div class="card-body">
+                        <a href="#" class="card-title stretched-link" style="text-decoration: none;">
+                            <div style="text-align: center;color: black;font-size: 16px;font-weight: bold;">
+                                Laptop
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card hieuung" style="width: 16.65%;height: 200px;">
+                    <img class="card-img-top rounded-circle" src="/DienThoai/anh1.PNG" style="width:100%;height: 60%;padding-left: 50px;padding-right: 50px;margin-top: 10px;">
+                    <div class="card-body">
+                        <a href="#" class="card-title stretched-link" style="text-decoration: none;">
+                            <div style="text-align: center;color: black;font-size: 16px;font-weight: bold;">
+                                Apple
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card hieuung" style="width: 16.65%;height: 200px;">
+                    <img class="card-img-top rounded-circle" src="/DienThoai/anh4.PNG" style="width:100%;height: 60%;padding-left: 50px;padding-right: 50px;margin-top: 10px;">
+                    <div class="card-body">
+                        <a href="#" class="card-title stretched-link" style="text-decoration: none;">
+                            <div style="text-align: center;color: black;font-size: 16px;font-weight: bold;">
+                                Máy tính bảng
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card hieuung" style="width: 16.65%;height: 200px;">
+                    <img class="card-img-top rounded-circle" src="/DienThoai/anh5.PNG" style="width:100%;height: 60%;padding-left: 50px;padding-right: 50px;margin-top: 10px;">
+                    <div class="card-body">
+                        <a href="#" class="card-title stretched-link" style="text-decoration: none;">
+                            <div style="text-align: center;color: black;font-size: 16px;font-weight: bold;">
+                                Đồng hồ thông minh
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card hieuung" style="width: 16.65%;height: 200px;">
+                    <img class="card-img-top rounded-circle" src="/DienThoai/anh6.PNG" style="width:100%;height: 60%;padding-left: 50px;padding-right: 50px;margin-top: 10px;">
+                    <div class="card-body">
+                        <a href="#" class="card-title stretched-link" style="text-decoration: none;">
+                            <div style="text-align: center;color: black;font-size: 16px;font-weight: bold;">
+                                Ốp lưng điện thoại
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="card hieuung" style="width: 16.65%;height: 200px;">
+                    <img class="card-img-top rounded-circle" src="/DienThoai/anh7.PNG" style="width:100%;height: 60%;padding-left: 50px;padding-right: 50px;margin-top: 10px;">
+                    <div class="card-body">
+                        <a href="#" class="card-title stretched-link" style="text-decoration: none;">
+                            <div style="text-align: center;color: black;font-size: 16px;font-weight: bold;">
+                                Tai nghe
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card hieuung" style="width: 16.65%;height: 200px;">
+                    <img class="card-img-top rounded-circle" src="/DienThoai/anh8.PNG" style="width:100%;height: 60%;padding-left: 50px;padding-right: 50px;margin-top: 10px;">
+                    <div class="card-body">
+                        <a href="#" class="card-title stretched-link" style="text-decoration: none;">
+                            <div style="text-align: center;color: black;font-size: 16px;font-weight: bold;">
+                                Màn hình
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card hieuung" style="width: 16.65%;height: 200px;">
+                    <img class="card-img-top rounded-circle" src="/DienThoai/anh9.PNG" style="width:100%;height: 60%;padding-left: 50px;padding-right: 50px;margin-top: 10px;">
+                    <div class="card-body">
+                        <a href="#" class="card-title stretched-link" style="text-decoration: none;">
+                            <div style="text-align: center;color: black;font-size: 16px;font-weight: bold;">
+                                Loa nghe nhạc
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card hieuung" style="width: 16.65%;height: 200px;">
+                    <img class="card-img-top rounded-circle" src="/DienThoai/anh10.png" style="width:100%;height: 60%;padding-left: 50px;padding-right: 50px;margin-top: 10px;">
+                    <div class="card-body">
+                        <a href="#" class="card-title stretched-link" style="text-decoration: none;">
+                            <div style="text-align: center;color: black;font-size: 16px;font-weight: bold;">
+                                Sạc - cáp
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card hieuung" style="width: 16.65%;height: 200px;">
+                    <img class="card-img-top rounded-circle" src="/DienThoai/anh11.png" style="width:100%;height: 60%;padding-left: 50px;padding-right: 50px;margin-top: 10px;">
+                    <div class="card-body">
+                        <a href="#" class="card-title stretched-link" style="text-decoration: none;">
+                            <div style="text-align: center;color: black;font-size: 16px;font-weight: bold;">
+                                Máy tính để bàn
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card hieuung" style="width: 16.65%;height: 200px;">
+                    <img class="card-img-top rounded-circle" src="/DienThoai/anh12.PNG" style="width:100%;height: 60%;padding-left: 50px;padding-right: 50px;margin-top: 10px;">
+                    <div class="card-body">
+                        <a href="#" class="card-title stretched-link" style="text-decoration: none;">
+                            <div style="text-align: center;color: black;font-size: 16px;font-weight: bold;">
+                                Máy in
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--form khuyen mai-->
+        <div style="margin-top: 10px;padding: 15px;">
+
+            <div class="row">
+                <div class="card" style="width: 25%;height: 450px;">
+                    <img class="card-img-top" src="/DienThoai/anh13.PNG" style="width:100%;height: 60%;padding-left: 50px;padding-right: 50px;margin-top: 20px;">
+                    <div class="card-body">
+                        <a href="#" class="card-title stretched-link" style="text-decoration: none;">
+                            <div style="text-align: center;color: rgb(104, 104, 104);font-size: 20px;font-weight: bold;">
+                                Samsung galaxy Note 20
+                            </div>
+                        </a>
+                        <div style="margin-top: 10px;border-radius: 5px;background-color: red;padding: 5px;text-align: center;color: rgb(255, 255, 255);font-size: 15px;font-weight: bold;">
+                            21.990.000đ
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 25%;height: 450px;">
+                    <img class="card-img-top" src="/DienThoai/anh14.PNG" style="width:100%;height: 70%;padding-left: 50px;padding-right: 50px;margin-top: 20px;">
+                    <div class="card-body">
+                        <a href="#" class="card-title stretched-link" style="text-decoration: none;">
+                            <div style="text-align: center;color: rgb(104, 104, 104);font-size: 20px;font-weight: bold;">
+                                Samsung galaxy Note 20 Ultra
+                            </div>
+                        </a>
+                        <div style="margin-top: 10px;border-radius: 5px;background-color: red;padding: 5px;text-align: center;color: rgb(255, 255, 255);font-size: 15px;font-weight: bold;">
+                            27.990.000đ
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 25%;height: 550px;">
+                    <img class="card-img-top" src="/DienThoai/anh15.PNG" style="width:100%;height: 70%;padding-left: 50px;padding-right: 50px;margin-top: 20px;">
+                    <div class="card-body">
+                        <a href="#" class="card-title stretched-link" style="text-decoration: none;">
+                            <div style="text-align: center;color: rgb(104, 104, 104);font-size: 20px;font-weight: bold;">
+                                iphone 11 Pro Max 64GB
+                            </div>
+                        </a>
+                        <div style="margin-top: 10px;border-radius: 5px;background-color: red;padding: 5px;text-align: center;color: rgb(255, 255, 255);font-size: 15px;font-weight: bold;">
+                            27.990.000đ
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 25%;height: 460px;">
+                    <img class="card-img-top" src="/DienThoai/anh16.PNG" style="width:100%;height: 60%;padding-left: 50px;padding-right: 50px;margin-top: 20px;">
+                    <div class="card-body">
+                        <a href="#" class="card-title stretched-link" style="text-decoration: none;">
+                            <div style="text-align: center;color: rgb(104, 104, 104);font-size: 20px;font-weight: bold;">
+                                Apple Watch Series 3 GPS Cellular 38mm viền nhôm dây cao su
+                            </div>
+                        </a>
+                        <div style="margin-top: 10px;border-radius: 5px;background-color: red;padding: 5px;text-align: center;color: rgb(255, 255, 255);font-size: 15px;font-weight: bold;">
+                            6.990.000đ
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div style="margin-top: 15px;">
+            <img src="/AnhNen/anh11.PNG" style="width: 100%;">
+        </div>
+
+        <!--form dien thoai gioi thieu-->
+        <div style="margin-top: 10px;padding: 15px;">
+
+            <div class="row">
+                <div class="card hieuung" style="width: 25%;height: 600px;">
+                    <img class="card-img-top" src="/DienThoai/anh21.PNG" style="width:100%;height: 55%;padding-left: 50px;padding-right: 50px;margin-top: 30px;">
+                    <div class="card-body">
+                        <div style="text-align: center;color: rgb(58, 58, 58);font-size: 15px;font-weight: bold;">
+                            Vsmart Aris 6GB-64GB
+                        </div>
+                        <div style="margin-top: 15px;background-color: red;border-radius: 5px;text-align: center;color: rgb(255, 255, 255);font-size: 16px;font-weight: bold;">
+                            6.490.000đ
+                        </div>
+                        <div style="border-radius: 10px;margin-top: 10px;padding-left: 45px;padding-bottom: 10px;background-color: rgb(221, 212, 212, 0.25);">
+                            <div style="clear: both;padding-top: 10px;">
+                                <i class="fas fa-memory" style="color: gray;"><span style="margin-left: 5px;">64 GB</span></i>
+                                <i class="fas fa-microchip" style="margin-left: 15px;color: gray;"><span style="margin-left: 5px;">6 GB</span></i>
+                            </div>
+                            <div>
+                                <i class="fas fa-mobile-alt" style="color: gray;"><span style="margin-left: 5px;">6.39''</span></i>
+                                <i class="fas fa-server" style="margin-left: 15px;color: gray;"><span style="margin-left: 5px;">Snapdragon 730</span></i>
+                            </div>
+                        </div>
+                        <div style="margin-top: 15px;padding-left: 40px;">
+                            <a href="./TrangDienThoai.html" type="button" class="btn btn-primary">Xem chi tiết</a>
+                            <a href="./TrangDienThoai.html" type="button" class="btn btn-success">So sánh</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card hieuung" style="width: 25%;height: 600px;">
+                    <img class="card-img-top" src="/DienThoai/anh22.PNG" style="width:100%;height: 55%;padding-left: 50px;padding-right: 50px;margin-top: 30px;">
+                    <div class="card-body">
+                        <div style="text-align: center;color: rgb(58, 58, 58);font-size: 15px;font-weight: bold;">
+                            Samsung Galaxy A21s
+                        </div>	
+                        <div style="margin-top: 15px;background-color: red;border-radius: 5px;text-align: center;color: rgb(255, 255, 255);font-size: 16px;font-weight: bold;">
+                            4.090.000đ
+                        </div>
+                        <div style="border-radius: 10px;margin-top: 10px;padding-left: 45px;padding-bottom: 10px;background-color: rgb(221, 212, 212, 0.25);">
+                            <div style="clear: both;padding-top: 10px;">
+                                <i class="fas fa-memory" style="color: gray;"><span style="margin-left: 5px;">32 GB</span></i>
+                                <i class="fas fa-microchip" style="margin-left: 15px;color: gray;"><span style="margin-left: 5px;">3 GB</span></i>
+                            </div>
+                            <div>
+                                <i class="fas fa-mobile-alt" style="color: gray;"><span style="margin-left: 5px;">6.5''</span></i>
+                                <i class="fas fa-server" style="margin-left: 15px;color: gray;"><span style="margin-left: 5px;">Exynos 850</span></i>
+                            </div>
+                        </div>
+                        <div style="margin-top: 15px;padding-left: 40px;">
+                            <a href="./TrangDienThoai.html" type="button" class="btn btn-primary">Xem chi tiết</a>
+                            <a href="./TrangDienThoai.html" type="button" class="btn btn-success">So sánh</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card hieuung" style="width: 25%;height: 600px;">
+                    <img class="card-img-top" src="/DienThoai/anh23.PNG" style="width:100%;height: 55%;padding-left: 50px;padding-right: 50px;margin-top: 30px;">
+                    <div class="card-body">
+                        <div style="text-align: center;color: rgb(58, 58, 58);font-size: 15px;font-weight: bold;">
+                            Oppo A53 4GB-128GB
+                        </div>
+                        <div style="margin-top: 15px;background-color: red;border-radius: 5px;text-align: center;color: rgb(255, 255, 255);font-size: 16px;font-weight: bold;">
+                            4.490.000đ
+                        </div>
+                        <div style="border-radius: 10px;margin-top: 10px;padding-left: 45px;padding-bottom: 10px;background-color: rgb(221, 212, 212, 0.25);">
+                            <div style="clear: both;padding-top: 10px;">
+                                <i class="fas fa-memory" style="color: gray;"><span style="margin-left: 5px;">128 GB</span></i>
+                                <i class="fas fa-microchip" style="margin-left: 15px;color: gray;"><span style="margin-left: 5px;">4 GB</span></i>
+                            </div>
+                            <div>
+                                <i class="fas fa-mobile-alt" style="color: gray;"><span style="margin-left: 5px;">6.5''</span></i>
+                                <i class="fas fa-server" style="margin-left: 15px;color: gray;"><span style="margin-left: 5px;">Snapdragon 460</span></i>
+                            </div>
+                        </div>
+                        <div style="margin-top: 15px;padding-left: 40px;">
+                            <a href="./TrangDienThoai.html" type="button" class="btn btn-primary">Xem chi tiết</a>
+                            <a href="./TrangDienThoai.html" type="button" class="btn btn-success">So sánh</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card hieuung" style="width: 25%;height: 600px;">
+                    <img class="card-img-top" src="/DienThoai/anh24.PNG" style="width:100%;height: 55%;padding-left: 50px;padding-right: 50px;margin-top: 30px;">
+                    <div class="card-body">
+                        <div style="text-align: center;color: rgb(58, 58, 58);font-size: 15px;font-weight: bold;">
+                            Samsung Galaxy A51
+                        </div>
+                        <div style="margin-top: 15px;background-color: red;border-radius: 5px;text-align: center;color: rgb(255, 255, 255);font-size: 16px;font-weight: bold;">
+                            6.490.000đ
+                        </div>
+                        <div style="border-radius: 10px;margin-top: 10px;padding-left: 45px;padding-bottom: 10px;background-color: rgb(221, 212, 212, 0.25);">
+                            <div style="clear: both;padding-top: 10px;">
+                                <i class="fas fa-memory" style="color: gray;"><span style="margin-left: 5px;">128 GB</span></i>
+                                <i class="fas fa-microchip" style="margin-left: 15px;color: gray;"><span style="margin-left: 5px;">6 GB</span></i>
+                            </div>
+                            <div>
+                                <i class="fas fa-mobile-alt" style="color: gray;"><span style="margin-left: 5px;">6.5''</span></i>
+                                <i class="fas fa-server" style="margin-left: 15px;color: gray;"><span style="margin-left: 5px;">Exynos 9611</span></i>
+                            </div>
+                        </div>
+                        <div style="margin-top: 15px;padding-left: 40px;">
+                            <a href="./TrangDienThoai.html" type="button" class="btn btn-primary">Xem chi tiết</a>
+                            <a href="./TrangDienThoai.html" type="button" class="btn btn-success">So sánh</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div style="margin-top: 15px;">
+            <img src="/AnhNen/anh10.PNG" style="width: 100%;">
+        </div>
+
+        <!--form may tinh gioi thieu-->
+        <div style="margin-top: 10px;padding: 15px;">
+
+            <div class="row">
+                <div class="card hieuung" style="width: 25%;height: 450px;">
+                    <img class="card-img-top" src="/DienThoai/anh17.PNG" style="width:100%;height: 35%;padding-left: 50px;padding-right: 50px;margin-top: 30px;">
+                    <div class="card-body">
+                        <div style="text-align: center;color: rgb(58, 58, 58);font-size: 15px;font-weight: bold;">
+                            Dell Inspiron N3493 i5 1035G18Gb256Gb14FHDWin 10
+                        </div>
+                        <div style="margin-top: 15px;background-color: red;border-radius: 5px;text-align: center;color: rgb(255, 255, 255);font-size: 16px;font-weight: bold;">
+                            15.590.000đ
+                        </div>
+                        <div style="border-radius: 10px;margin-top: 10px;padding-left: 45px;padding-bottom: 10px;background-color: rgb(221, 212, 212, 0.25);">
+                            <div style="clear: both;padding-top: 10px;">
+                                <i class="fas fa-memory" style="color: gray;">SSD 128 GB</i>
+                                <i class="fas fa-microchip" style="margin-left: 15px;color: gray;">8 GB</i>
+                            </div>
+                            <div>
+                                <i class="fas fa-laptop" style="color: gray;">14.0''</i>
+                                <i class="fas fa-server" style="margin-left: 15px;color: gray;">Core i5</i>
+                            </div>
+                        </div>
+                        <div style="margin-top: 15px;padding-left: 40px;">
+                            <a th:href="@{/trangchitietsanpham/{masanpham}(masanpham='mt_26')}" type="button" class="btn btn-primary">Xem chi tiết</a>
+                            <a href="./TrangDienThoai.html" type="button" class="btn btn-success">So sánh</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card hieuung" style="width: 25%;height: 450px;">
+                    <img class="card-img-top" src="/DienThoai/anh18.PNG" style="width:100%;height: 35%;padding-left: 50px;padding-right: 50px;margin-top: 30px;">
+                    <div class="card-body">
+                        <div style="text-align: center;color: rgb(58, 58, 58);font-size: 15px;font-weight: bold;">
+                            HP 15s-fq1107TU i3 1005G1/4GB/256GB SSD/WIN10
+                        </div>
+                        <div style="margin-top: 15px;background-color: red;border-radius: 5px;text-align: center;color: rgb(255, 255, 255);font-size: 16px;font-weight: bold;">
+                            10.290.000đ
+                        </div>
+                        <div style="border-radius: 10px;margin-top: 10px;padding-left: 45px;padding-bottom: 10px;background-color: rgb(221, 212, 212, 0.25);">
+                            <div style="clear: both;padding-top: 10px;">
+                                <i class="fas fa-memory" style="color: gray;">SSD 256 GB</i>
+                                <i class="fas fa-microchip" style="margin-left: 15px;color: gray;">4 GB</i>
+                            </div>
+                            <div>
+                                <i class="fas fa-laptop" style="color: gray;">15.6''</i>
+                                <i class="fas fa-server" style="margin-left: 15px;color: gray;">Core i3</i>
+                            </div>
+                        </div>
+                        <div style="margin-top: 15px;padding-left: 40px;">
+                            <a href="./TrangDienThoai.html" type="button" class="btn btn-primary">Xem chi tiết</a>
+                            <a href="./TrangDienThoai.html" type="button" class="btn btn-success">So sánh</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card hieuung" style="width: 25%;height: 450px;">
+                    <img class="card-img-top" src="/DienThoai/anh19.PNG" style="width:100%;height: 35%;padding-left: 50px;padding-right: 50px;margin-top: 30px;">
+                    <div class="card-body">
+                        <div style="text-align: center;color: rgb(58, 58, 58);font-size: 15px;font-weight: bold;">
+                            Lenovo IdeaPad S145-15API R5 3500U/8GB/512GB SSD/WIN10
+                        </div>
+                        <div style="margin-top: 15px;background-color: red;border-radius: 5px;text-align: center;color: rgb(255, 255, 255);font-size: 16px;font-weight: bold;">
+                            11.030.000đ
+                        </div>
+                        <div style="border-radius: 10px;margin-top: 10px;padding-left: 45px;padding-bottom: 10px;background-color: rgb(221, 212, 212, 0.25);">
+                            <div style="clear: both;padding-top: 10px;">
+                                <i class="fas fa-memory" style="color: gray;">SSD 512 GB</i>
+                                <i class="fas fa-microchip" style="margin-left: 15px;color: gray;">8 GB</i>
+                            </div>
+                            <div>
+                                <i class="fas fa-laptop" style="color: gray;">15.6''</i>
+                                <i class="fas fa-server" style="margin-left: 15px;color: gray;">Ryzen 5</i>
+                            </div>
+                        </div>
+                        <div style="margin-top: 15px;padding-left: 40px;">
+                            <a href="./TrangDienThoai.html" type="button" class="btn btn-primary">Xem chi tiết</a>
+                            <a href="./TrangDienThoai.html" type="button" class="btn btn-success">So sánh</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card hieuung" style="width: 25%;height: 450px;">
+                    <img class="card-img-top" src="/DienThoai/anh20.PNG" style="width:100%;height: 35%;padding-left: 50px;padding-right: 50px;margin-top: 30px;">
+                    <div class="card-body">
+                        <div style="text-align: center;color: rgb(58, 58, 58);font-size: 15px;font-weight: bold;">
+                            Asus VivoBook M413IA-EK480T R5-4500U/8GB/512GB SSD/Win10
+                        </div>
+                        <div style="margin-top: 15px;background-color: red;border-radius: 5px;text-align: center;color: rgb(255, 255, 255);font-size: 16px;font-weight: bold;">
+                            14.940.000đ
+                        </div>
+                        <div style="border-radius: 10px;margin-top: 10px;padding-left: 45px;padding-bottom: 10px;background-color: rgb(221, 212, 212, 0.25);">
+                            <div style="clear: both;padding-top: 10px;">
+                                <i class="fas fa-memory" style="color: gray;">SSD 256 GB</i>
+                                <i class="fas fa-microchip" style="margin-left: 15px;color: gray;">8 GB</i>
+                            </div>
+                            <div>
+                                <i class="fas fa-laptop" style="color: gray;">14.0''</i>
+                                <i class="fas fa-server" style="margin-left: 15px;color: gray;">Ryzen 5</i>
+                            </div>
+                        </div>
+                        <div style="margin-top: 15px;padding-left: 40px;">
+                            <a href="./TrangDienThoai.html" type="button" class="btn btn-primary">Xem chi tiết</a>
+                            <a href="./TrangDienThoai.html" type="button" class="btn btn-success">So sánh</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="margin-top: 15px;overflow: auto;">
+            <div style="float: left;width: 49%;">
+                <img src="/AnhNen/anh8.png" style="width: 100%;height: 150px;">
+            </div>
+            <div style="float: left;width: 49%;margin-left: 25px;">
+                <img src="/AnhNen/anh9.png" style="width: 100%;height: 150px;">
+            </div>
+
+        </div>
+
+        <!--form phu kien gioi thieu-->
+        <div style="margin-top: 10px;padding: 15px;">
+
+            <div class="row">
+                <div class="card hieuung" style="width: 16.65%;height: 175px;">
+                    <!--
+                    <img class="card-img-top rounded-circle" src="/anh1.PNG" style="width:100%;height: 60%;padding-left: 50px;padding-right: 50px;margin-top: 20px;">
+                    -->
+                    <div style="text-align: center;padding-top: 35px;">
+                        <i class="fas fa-medal" style="color: gray;font-size: 75px;"></i>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-title stretched-link" style="text-decoration: none;">
+                            <div style="text-align: center;color: black;font-size: 16px;font-weight: bold;">
+                                Điện thoại
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card hieuung" style="width: 16.65%;height: 175px;">
+                    <div style="text-align: center;padding-top: 35px;">
+                        <i class="fas fa-mobile" style="color: gray;font-size: 75px;"></i>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-title stretched-link" style="text-decoration: none;">
+                            <div style="text-align: center;color: black;font-size: 16px;font-weight: bold;">
+                                Ốp lưng
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card hieuung" style="width: 16.65%;height: 175px;">
+                    <div style="text-align: center;padding-top: 35px;">
+                        <i class="fas fa-charging-station" style="color: gray;font-size: 75px;"></i>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-title stretched-link" style="text-decoration: none;">
+                            <div style="text-align: center;color: black;font-size: 16px;font-weight: bold;">
+                                Sạc dự phòng
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card hieuung" style="width: 16.65%;height: 175px;">
+                    <div style="text-align: center;padding-top: 35px;">
+                        <i class="fas fa-sd-card" style="color: gray;font-size: 75px;"></i>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-title stretched-link" style="text-decoration: none;">
+                            <div style="text-align: center;color: black;font-size: 16px;font-weight: bold;">
+                                Thẻ nhớ
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card hieuung" style="width: 16.65%;height: 175px;">
+                    <div style="text-align: center;padding-top: 35px;">
+                        <i class="fab fa-apple" style="color: gray;font-size: 75px;"></i>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-title stretched-link" style="text-decoration: none;">
+                            <div style="text-align: center;color: black;font-size: 16px;font-weight: bold;">
+                                Điện thoại
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card hieuung" style="width: 16.65%;height: 175px;">
+                    <div style="text-align: center;padding-top: 35px;">
+                        <i class="fas fa-headphones" style="color: gray;font-size: 75px;"></i>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-title stretched-link" style="text-decoration: none;">
+                            <div style="text-align: center;color: black;font-size: 16px;font-weight: bold;">
+                                Tai nghe
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="card hieuung" style="width: 16.65%;height: 175px;">
+                    <div style="text-align: center;padding-top: 35px;">
+                        <i class="fas fa-volume-up" style="color: gray;font-size: 75px;"></i>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-title stretched-link" style="text-decoration: none;">
+                            <div style="text-align: center;color: black;font-size: 16px;font-weight: bold;">
+                                Loa
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card hieuung" style="width: 16.65%;height: 175px;">
+                    <div style="text-align: center;padding-top: 35px;">
+                        <i class="fas fa-hdd" style="color: gray;font-size: 75px;"></i>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-title stretched-link" style="text-decoration: none;">
+                            <div style="text-align: center;color: black;font-size: 16px;font-weight: bold;">
+                                USB - Ổ cứng
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card hieuung" style="width: 16.65%;height: 175px;">
+                    <div style="text-align: center;padding-top: 35px;">
+                        <i class="fas fa-mouse" style="color: gray;font-size: 75px;"></i>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-title stretched-link" style="text-decoration: none;">
+                            <div style="text-align: center;color: black;font-size: 16px;font-weight: bold;">
+                                Chuột
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card hieuung" style="width: 16.65%;height: 175px;">
+                    <div style="text-align: center;padding-top: 35px;">
+                        <i class="fas fa-keyboard" style="color: gray;font-size: 75px;"></i>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-title stretched-link" style="text-decoration: none;">
+                            <div style="text-align: center;color: black;font-size: 16px;font-weight: bold;">
+                                Bàn phím
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card hieuung" style="width: 16.65%;height: 175px;">
+                    <div style="text-align: center;padding-top: 35px;">
+                        <i class="fas fa-tv" style="color: gray;font-size: 75px;"></i>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-title stretched-link" style="text-decoration: none;">
+                            <div style="text-align: center;color: black;font-size: 16px;font-weight: bold;">
+                                TV BOX
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card hieuung" style="width: 16.65%;height: 175px;">
+                    <div style="text-align: center;padding-top: 35px;">
+                        <i class="fas fa-ethernet" style="color: gray;font-size: 75px;"></i>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-title stretched-link" style="text-decoration: none;">
+                            <div style="text-align: center;color: black;font-size: 16px;font-weight: bold;">
+                                Sạc cáp
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div style="background-color: white;overflow: auto;margin-top: 25px;clear: both;">
+        <div style="margin-right: 100px;margin-left: 100px;margin-top: 25px;overflow: auto;">
+
+            <div style="float: left;margin-bottom: 25px;">
+                <div>
+                    <a style="font-size: 14px;" href="#">Giới thiệu về công ty</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Câu hỏi thường gặp mua hàng</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Chính sách bảo mật</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Quy chế hoạt động</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Kiểm tra hóa đơn điện tử</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Tra cứu thông tin bảo hành</a>
+                </div>
+            </div>
+
+            <div style="float: left;margin-left: 50px;">
+                <div>
+                    <a style="font-size: 14px;" href="#">Tin tuyển dụng</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Tin khuyến mãi</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Hướng dẫn mua online</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Hướng dẫn mua trả góp</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Chính sách trả góp</a>
+                </div>
+            </div>
+
+            <div style="float: left;margin-left: 50px;">
+                <div>
+                    <a style="font-size: 14px;" href="#">Hệ thống cửa hàng</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Hệ thống bảo hành</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Kiểm tra hàng Apple chính hãng</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Giới thiệu máy đổi trả</a>
+                </div>
+                <div>
+                    <a style="font-size: 14px;" href="#">Chính sách đổi trả</a>
+                </div>
+            </div>
+
+            <div style="float: left;margin-left: 50px;">
+                <div>
+                    <div>
+                        Tư vấn mua hàng (miễn phí)
+                    </div>
+                    <div>
+                        <a href="#" style="font-size: 20px;color: red;">1800 6601</a>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        Góp ý, khiếu nại dịch vụ
+                    </div>
+                    <div>
+                        <a href="#" style="font-size: 20px;color: red;">1800 6616</a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="float: left;margin-left: 50px;">
+                <div>
+                    Hỗ trợ thanh toán
+                </div>
+                <div>
+                    <i class="fab fa-cc-visa" style="font-size: 35px;color: rgb(58, 58, 255);"></i>
+                    <i class="fab fa-cc-paypal" style="font-size: 35px;color: rgb(0, 0, 190);"></i>
+                    <i class="fab fa-cc-stripe" style="font-size: 35px;color: red;"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

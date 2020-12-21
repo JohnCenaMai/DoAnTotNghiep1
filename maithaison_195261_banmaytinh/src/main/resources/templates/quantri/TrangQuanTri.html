@@ -1,0 +1,432 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Trang chủ quản trị</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+
+    <script>
+        $(document).ready(function() {
+            $("#mamaytinh1").click(function() {
+                $('#v-pills-qlmt').load("TrangChiTietMayTinh.html");
+                //$("#v-pills-qldt").load("TrangChiTietMayTinh.html");
+            });
+            $("#mahoadon1").click(function() {
+                $('#v-pills-qlhd').load("ChiTietHoaDon.html");
+                //$("#v-pills-qldt").load("TrangChiTietMayTinh.html");
+            });
+        });
+    </script>
+
+    <style>
+        .mau {
+            color: rgb(91, 91, 155);
+            font-weight: bold;
+        }
+        
+        .vungchinh {
+            background: url("../DienThoai/admin_background.jpg");
+            background-size: 1235px 720px;
+            background-repeat: no-repeat;
+        }
+        
+        #baocao {
+            width: 1065px;
+            height: 125px;
+            display: flex;
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        #baocao div {
+            width: 175px;
+            height: 100px;
+            border-radius: 5px;
+            box-shadow: 10px 10px 5px grey;
+        }
+        
+        #baocao div:hover {
+            opacity: 0.75;
+        }
+        
+        #baocao1 {
+            width: 1065px;
+            height: 125px;
+            display: flex;
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        #baocao1 div {
+            width: 175px;
+            height: 100px;
+            border-radius: 5px;
+            box-shadow: 10px 10px 5px grey;
+        }
+        
+        #baocao1 div:hover {
+            opacity: 0.75;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <div style="width: 1535px;height: 720px;display: flex;background-color: #dcebe3;">
+        <div style="background-color: #e5eaf5;width: 300px;height: 720px;">
+            <div style="margin: 5px;overflow: auto;border: 1px solid rgb(255, 224, 224);border-radius: 5px;">
+                <div style="float: left;padding: 10px;">
+                    <img src="../anh1.PNG" class="rounded-circle" style="width: 50px;height: 35px;">
+                </div>
+                <div class="mau" style="font-size: 20px;float: left;margin-left: 15px;margin-top: 12px;">
+                    FPT SHOP
+                </div>
+            </div>
+            <div style="margin: 5px;overflow: auto;border: 1px solid rgb(255, 228, 228);border-radius: 5px;">
+                <div style="float: left;padding: 10px;">
+                    <img src="../anh1.PNG" class="rounded-circle" style="width: 35px;height: 35px;">
+                </div>
+                <div class="mau" style="font-size: 20px;float: left;margin-left: 15px;margin-top: 12px;">
+                    MAI THÁI SƠN
+                </div>
+            </div>
+            <div style="padding-left: 5px;padding-right: 5px;margin-top: 15px;" class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="mau nav-link active" id="v-pills-tc-tab" data-toggle="pill" href="#v-pills-tc" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                    <i class="fas fa-space-shuttle"><span style="margin-left: 10px;">Báo cáo tổng hợp</span></i>
+                </a>
+                <a class="mau nav-link" id="v-pills-tttk-tab" data-toggle="pill" href="#v-pills-tttk" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                    <i class="fas fa-user-circle"><span style="margin-left: 10px;">Thông tin tài khoản</span></i>
+                </a>
+                <a class="mau nav-link" id="v-pills-qlmt-tab" data-toggle="pill" href="#v-pills-qlmt" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                    <i class="fas fa-desktop"><span style="margin-left: 10px;">Quản lý máy tính</span></i>
+                </a>
+                <a class="mau nav-link" id="v-pills-qldt-tab" data-toggle="pill" href="#v-pills-qldt" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                    <i class="fas fa-mobile-alt"><span style="margin-left: 10px;">Quản lý điện thoại</span></i>
+                </a>
+                <a class="mau nav-link" id="v-pills-qlmtb-tab" data-toggle="pill" href="#v-pills-qlmtb" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                    <i class="fas fa-tablet"><span style="margin-left: 10px;">Quản lý máy tính bảng</span></i>
+                </a>
+                <a class="mau nav-link" id="v-pills-qlkh-tab" data-toggle="pill" href="#v-pills-qlkh" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                    <i class="fas fa-user-friends"><span style="margin-left: 10px;">Quản lý khách hàng</span></i>
+                </a>
+                <a class="mau nav-link" id="v-pills-qlbl-tab" data-toggle="pill" href="#v-pills-qlbl" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                    <i class="fas fa-comments"><span style="margin-left: 10px;">Quản lý bình luận</span></i>
+                </a>
+                <a class="mau nav-link" id="v-pills-qlhd-tab" data-toggle="pill" href="#v-pills-qlhd" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                    <i class="fas fa-money-bill"><span style="margin-left: 10px;">Quản lý hóa đơn</span></i>
+                </a>
+                <a class="mau nav-link" id="v-pills-qlht-tab" data-toggle="pill" href="#v-pills-qlht" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                    <i class="fas fa-envelope-square"><span style="margin-left: 10px;">Quản lý hộp thư</span></i>
+                </a>
+                <a class="mau nav-link" id="v-pills-dx-tab" data-toggle="pill" th:href="@{/dangxuat}" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                    <i class="fas fa-sign-out-alt"><span style="margin-left: 10px;">Đăng xuất</span></i>
+                </a>
+            </div>
+        </div>
+
+        <div style="width: 1235px;height: 720px;" class="tab-content vungchinh" id="v-pills-tabContent">
+            <div style="font-weight: bold;padding: 15px;width: 1235px;height: 50px;background-color: white;">
+                <i class="fas fa-user-shield"><span style="margin-left: 10px;">ADMIN PAGE - TRANG QUẢN LÝ CHÍNH - NGÀY 3/10/2020</span></i>
+            </div>
+            <!--Trang chính-->
+            <div style="padding: 15px;width: 1090px;height: 585px;" class="tab-pane fade show active" id="v-pills-tc" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                <h4 style="font-weight: bold;color: rgb(255, 255, 255);">
+                    <i class="fas fa-book-reader"><span style="margin-left: 10px;">Báo cáo mới nhất trong tháng</span></i>
+                </h4>
+                <div id="baocao">
+                    <div style="background-color: rgba(117, 42, 255, 0.911);">
+                        <i class="fas fa-shipping-fast" style="margin-left: 15px;margin-top: 15px;font-size: 35px;color: rgb(92, 0, 0);">
+                            <span style="font-size: 25px;margin-left: 25px;text-shadow: 5px 5px 10px rgb(255, 255, 255);">
+                                19 <br>new orders
+                            </span>
+                        </i>
+                    </div>
+                    <div style="margin-left: 25px;background-color: rgba(12, 214, 12, 0.932);">
+                        <i class="fas fa-chart-bar" style="margin-left: 15px;margin-top: 15px;font-size: 35px;color: rgb(112, 112, 0);">
+                            <span style="font-size: 25px;margin-left: 25px;text-shadow: 5px 5px 10px rgb(255, 255, 255);">
+                                19 <br>new products
+                            </span>
+                        </i>
+                    </div>
+                    <div style="margin-left: 25px;background-color: rgba(255, 255, 35, 0.884);">
+                        <i class="fas fa-user-plus" style="margin-left: 15px;margin-top: 15px;font-size: 35px;color: rgb(112, 112, 0);">
+                            <span style="font-size: 25px;margin-left: 25px;text-shadow: 5px 5px 10px rgb(0, 4, 252);">
+                                19 <br>new users
+                            </span>
+                        </i>
+                    </div>
+                    <div style="margin-left: 25px;background-color: rgba(252, 44, 44, 0.822);">
+                        <i class="fas fa-comments" style="margin-left: 15px;margin-top: 15px;font-size: 35px;color: rgb(65, 55, 55);">
+                            <span style="font-size: 25px;margin-left: 25px;text-shadow: 2px 2px 5px rgb(255, 255, 255);">
+                                19 <br><span style="font-size: 22px;">new comments</span>
+                            </span>
+                        </i>
+                    </div>
+                </div>
+                <div id="baocao1">
+                    <div style="background-color: rgba(117, 42, 255, 0.911);">
+                        <i class="fas fa-shipping-fast" style="margin-left: 15px;margin-top: 15px;font-size: 35px;color: rgb(92, 0, 0);">
+                            <span style="font-size: 25px;margin-left: 25px;text-shadow: 5px 5px 10px rgb(255, 255, 255);">
+                                19 <br>new orders
+                            </span>
+                        </i>
+                    </div>
+                    <div style="margin-left: 25px;background-color: rgba(12, 214, 12, 0.932);">
+                        <i class="fas fa-chart-bar" style="margin-left: 15px;margin-top: 15px;font-size: 35px;color: rgb(112, 112, 0);">
+                            <span style="font-size: 25px;margin-left: 25px;text-shadow: 5px 5px 10px rgb(255, 255, 255);">
+                                19 <br>new products
+                            </span>
+                        </i>
+                    </div>
+                    <div style="margin-left: 25px;background-color: rgba(255, 255, 35, 0.884);">
+                        <i class="fas fa-user-plus" style="margin-left: 15px;margin-top: 15px;font-size: 35px;color: rgb(112, 112, 0);">
+                            <span style="font-size: 25px;margin-left: 25px;text-shadow: 5px 5px 10px rgb(0, 4, 252);">
+                                19 <br>new users
+                            </span>
+                        </i>
+                    </div>
+                    <div style="margin-left: 25px;background-color: rgba(252, 44, 44, 0.822);">
+                        <i class="fas fa-comments" style="margin-left: 15px;margin-top: 15px;font-size: 35px;color: rgb(65, 55, 55);">
+                            <span style="font-size: 25px;margin-left: 25px;text-shadow: 2px 2px 5px rgb(255, 255, 255);">
+                                19 <br><span style="font-size: 22px;">new comments</span>
+                            </span>
+                        </i>
+                    </div>
+                </div>
+            </div>
+            <!--Thông tin tài khoản-->
+            <div style="padding: 15px;" class="tab-pane fade" id="v-pills-tttk" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                <h4 style="font-weight: bold;color: rgb(255, 255, 255);">Thông tin tài khoản</h4>
+                <form action="" style="margin-top: 10px;color: white;">
+                    <div class="form-group">
+                        <label>Họ và tên:</label>
+                        <input disabled type="text" class="form-control" placeholder="Nhập họ và tên..." name="hoten">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input disabled type="email" class="form-control" id="email" placeholder="Nhập email..." name="email">
+                    </div>
+                    <div class="form-group">
+                        <label>Mật khẩu:</label>
+                        <input type="text" class="form-control" placeholder="Thay đổi mật khẩu..." name="matkhau">
+                    </div>
+                    <div class="form-group">
+                        <label>Số điện thoại:</label>
+                        <input type="text" class="form-control" placeholder="Thay đổi số điện thoại..." name="sodienthoai">
+                    </div>
+                    <div class="form-group">
+                        <label>Địa chỉ:</label>
+                        <input type="text" class="form-control" placeholder="Thay đổi địa chỉ..." name="diachi">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Lưu thông tin</button>
+                </form>
+            </div>
+            <!--quản lý máy tính-->
+            <div style="padding: 15px;" class="tab-pane fade" id="v-pills-qlmt" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                <div style="float: left;">
+                    <h4 style="font-weight: bold;color: rgb(255, 255, 255);">Quản lý máy tính</h4>
+                </div>
+                <div style="float: right;margin-bottom: 10px;">
+                    <a th:href="@{/trangquantri/trangthemmoimaytinh}" style="width: 450px;" class="btn btn-danger">Thêm mới máy tính</a>
+                </div>
+                <table class="table" style="font-size: 14px;color: white;clear: both;">
+                    <thead>
+                        <tr>
+                            <th>Mã máy tính</th>
+                            <th>Tên máy tính</th>
+                            <th>Xuất xứ</th>
+                            <th>Số lượng</th>
+                            <th>Giá</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    	<th:block th:each="dsmt:${danhsachmaytinh}">
+                    		<tr>
+	                            <td><a th:utext="'#' + ${dsmt.mamaytinh}" href="#" style="text-decoration: none;color:white;"></a></td>
+	                            <td th:utext="${dsmt.tensanpham}"></td>
+	                            <td th:utext="${dsmt.xuatxu}"></td>
+	                            <td th:utext="${dsmt.soluong} + ' chiếc'"></td>
+	                            <td th:utext="${dsmt.gia} + ' USD'"></td>
+	                            <td>
+	                            	<a href="#" class="btn btn-danger">Cập nhật thông tin</a>
+	                            	<a href="#" class="btn btn-warning">Xóa</a>
+	                            </td>
+	                        </tr>
+                    	</th:block>
+                    </tbody>
+                </table>
+            </div>
+            <!--quản lý điện thoại-->
+            <div style="padding: 15px;" class="tab-pane fade" id="v-pills-qldt" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                <h4 style="font-weight: bold;color: rgb(255, 255, 255);">Quản lý điện thoại</h4>
+                <table class="table" style="font-size: 13px;color: white;">
+                    <thead>
+                        <tr>
+                            <th>Mã điện thoại</th>
+                            <th>Tên điện thoại</th>
+                            <th>Xuất xứ</th>
+                            <th>Số lượng</th>
+                            <th>Giá</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a id="mamaytinh1" href="#" style="text-decoration: none;">1</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--quản lý máy tính bảng-->
+            <div style="padding: 15px;" class="tab-pane fade" id="v-pills-qlmtb" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                <h4 style="font-weight: bold;color: rgb(255, 255, 255);">Quản lý máy tính bảng</h4>
+                <table class="table" style="font-size: 13px;color: white;">
+                    <thead>
+                        <tr>
+                            <th>Mã máy tính bảng</th>
+                            <th>Tên máy tính bảng</th>
+                            <th>Xuất xứ</th>
+                            <th>Số lượng</th>
+                            <th>Giá</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a id="mamaytinh1" href="#" style="text-decoration: none;">1</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--quản lý khách hàng-->
+            <div style="padding: 15px;" class="tab-pane fade" id="v-pills-qlkh" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                <h4 style="font-weight: bold;color: rgb(255, 255, 255);">Quản lý khách hàng</h4>
+                <table class="table table-hover" style="font-size: 14px;color: white;">
+                    <thead>                    	
+                        <tr>
+                        	<th>Mã khách hàng</th>
+                            <th>Email</th>
+                            <th>Họ tên khách hàng</th>
+                            <th>Số điện thoại</th>
+                            <th>Địa chỉ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    	<th:block th:each="dskh:${danhsachkhachhang}">
+	                    	<tr>
+	                            <td><a th:href="@{/trangquantri/trangquanlykhachhang/{makh}(makh=${dskh.makh})}" th:utext="'#' + ${dskh.makh}" style="text-decoration: none;color: white;"></a></td>
+	                            <td th:utext="${dskh.email}" style="color: white;"></td>
+	                            <td th:utext="${dskh.tenkhachhang}" style="color: white;"></td>
+	                            <td th:utext="${dskh.sodienthoai}" style="color: white;"></td>                           
+	                            <td th:utext="${dskh.diachi}" style="color: white;"></td>
+	                        </tr>
+                    	</th:block>                     
+                    </tbody>
+                </table>
+            </div>
+            <!--quản lý bình luận-->
+            <div style="padding: 15px;" class="tab-pane fade" id="v-pills-qlbl" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                <h4 style="font-weight: bold;color: rgb(255, 255, 255);">Quản lý bình luận</h4>
+                <table class="table table-hover" style="font-size: 14px;color: white;">
+                    <thead>
+                        <tr>
+                            <th>Mã sản phẩm</th>
+                            <th>Số bình luận</th>
+                            <th>Số phản hồi</th>
+                            <th>Chi tiết nội dung</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    	<th:block th:each="dsbl:${danhsachbinhluan}">
+                    		<tr>
+	                            <td style="text-decoration: none;color: white;" th:utext="${dsbl.masanpham}"></td>
+	                            <td style="text-decoration: none;color: white;" th:utext="${dsbl.sobinhluan}"></td>
+	                            <td style="text-decoration: none;color: white;" th:utext="${dsbl.sophanhoi}"></td>
+	                            <td><a th:href="@{/trangchitietsanpham/{masanpham}(masanpham=${dsbl.masanpham})}" type="button" class="btn btn-danger">Xem chi tiết</a></td>
+	                        </tr>
+                    	</th:block>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!--quản lý hóa đơn-->
+            <div style="padding: 15px;" class="tab-pane fade" id="v-pills-qlhd" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                <h4 style="font-weight: bold;color: rgb(255, 255, 255);">Quản lý hóa đơn</h4>
+                <table class="table table-hover" style="font-size: 14px;color: white;">
+                    <thead>
+                        <tr>
+                            <th>Mã hóa đơn</th>
+                            <th>Mã khách hàng</th>
+                            <th>Ngày đặt hàng</th>
+                            <th>Trạng thái</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    	<th:block th:each="dshd : ${danhsachhoadon}">
+                    		<tr>
+	                            <td><a th:href="@{/trangquantri/trangchitiethoadon/{mahoadon}(mahoadon=${dshd.mahoadon})}" th:utext="'#' + ${dshd.mahoadon}" style="text-decoration: none;color: white;"></a></td>
+	                            <td><a th:utext="'#' + ${dshd.makh}" th:href="@{/trangquantri/trangquanlykhachhang/{makh}(makh=${dshd.makh})}" style="text-decoration: none;color: white;"></a></td>
+	                            <td th:utext="${dshd.ngaydathang}" style="color: white;"></td>	                            
+	                            <td th:if="${dshd.trangthai}" th:utext="'Đã giao hàng thành công'" style="color: white;"></td>       
+	                            <td th:unless="${dshd.trangthai}" th:utext="'Chưa giao hàng thành công'" style="color: white;"></td>                            
+	                        </tr>
+                    	</th:block>                     
+                    </tbody>
+                </table>
+            </div>
+
+			<!--quản lý hộp thư-->
+            <div style="padding: 15px;" class="tab-pane fade" id="v-pills-qlht" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                <h4 style="font-weight: bold;color: rgb(255, 255, 255);">Quản lý hộp thư</h4>
+                <table class="table table-hover" style="font-size: 14px;color: white;">
+                    <thead>
+                        <tr>
+                            <th>Mã hộp thư</th>
+                            <th>Email</th>
+                            <th>Chủ đề</th>
+                            <th>Nội dung</th>
+                            <th>Ngày gửi</th>
+                            <th>Trạng thái</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    	<th:block th:each="dsht : ${danhsachhopthu}">
+                    		<tr>
+	                            <td th:utext="${dsht.idhopthu}" style="color: white;"></td>
+	                            <td th:utext="${dsht.email}" style="color: white;"></td>
+	                            <td th:utext="${dsht.chude}" style="color: white;"></td>	      
+	                            <td th:utext="${dsht.noidunggui}" style="color: white;"></td>	
+	                            <td th:utext="${dsht.ngaygui}" style="color: white;"></td>	                               
+	                            <td th:if="${dsht.trangthai}" th:utext="'Đã trả lời'" style="color: white;"></td>       
+	                            <td th:unless="${dsht.trangthai}">
+	                            	<a th:href="@{/trangquantri/trangsoanthu(emailkhachhang=${dsht.email},emailadmin=${ttqtv.email},chude=${dsht.chude},noidung=${dsht.noidunggui})}" style="color: white;" type="button" class="btn btn-danger">Soạn thư trả lời</a>
+	                            </td>                            
+	                        </tr>
+                    	</th:block>                     
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

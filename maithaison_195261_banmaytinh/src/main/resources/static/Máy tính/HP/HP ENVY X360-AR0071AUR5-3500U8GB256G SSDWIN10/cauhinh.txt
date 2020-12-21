@@ -1,0 +1,106 @@
+﻿Bộ xử lý
+Hãng CPU :	AMD
+Công nghệ CPU :	Ryzen 5
+Loại CPU :	3500U
+Số lõi :	4
+Số luồng :	8
+Tốc độ CPU :	2.10 GHz
+Tốc độ tối đa :	3.70 GHz
+Bộ nhớ đệm :	4 MB L3 Cache
+Tốc độ BUS :	Đang cập nhật
+RAM
+Dung lượng RAM :	8 GB
+Loại RAM :	DDR4
+Tốc độ RAM :	2400 MHz
+Số khe cắm rời :	0
+Số khe RAM còn lại :	0
+Số RAM onboard :	1
+Hỗ trợ RAM tối đa :	8 GB
+Màn hình
+Kích thước màn hình :	13.3"
+Loại màn hình :	LED
+Độ phân giải :	1920 x 1080 Pixel
+Tần số quét :	60 Hz
+Độ sáng :	300 nits
+Tấm nền :	IPS
+Công nghệ màn hình :	LED-backlit
+Độ phủ màu :	Đang cập nhật
+Tỷ lệ màn hình :	16:09
+Độ tương phản :	Đang cập nhật
+Màn hình cảm ứng :	Có
+Loại cảm ứng :	Đa điểm
+Đồ họa
+Hãng (Card onboard) :	AMD
+Card onboard :	Radeon Graphics
+Model (Card onboard) :	Vega 8
+Xung nhịp (Card onboard) :	300 MHz
+Xung nhịp tối đa (Card onboard) :	1100 MHz
+Lưu trữ
+Kiểu SSD :	M2. PCIe
+Dung lượng SSD :	256 GB
+Tốc độ đọc/ghi :	3000 Mb/s
+Hỗ trợ công nghệ Optane :	Đang cập nhật
+Tổng số khe cắm SSD/HDD :	1
+Số khe SSD/HDD còn lại :	0
+Chuẩn M2 :	Đang cập nhật
+Giao tiếp & Kết nối
+Số cổng Type-C :	1
+Số cổng USB 3.0 :	2
+Số cổng USB 2.0 :	0
+Số cổng HDMI :	0
+Số cổng VGA :	0
+Số cổng Card reader :	1
+Số cổng DC-in jack :	0
+Số cổng 3.5 mm :	1
+Số cổng Thunderbolt :	0
+Số cổng LAN :	0
+Wireless :	802.11 a/b/g/n/ac
+Bluetooth :	Đang cập nhật
+Khe đọc thẻ nhớ :	microSD media card reader
+Senser :	Không
+Webcame :	HD Web Camera
+Âm thanh
+Số Loa :	Đang cập nhật
+Công nghệ âm thanh :	Đang cập nhật
+Bảo mật
+Mở khóa vân tay (Finger Print) :	Có
+Nhận diện khuôn mặt :	Không
+Mật khẩu :	Có
+Ổ đĩa quang
+Loại ổ đĩa quang :	Đang cập nhật
+Ổ đĩa quang :	Không
+Bàn phím & TouchPad
+Kiểu bàn phím :	QWERTY
+Bàn phím số :	Không
+Loại đèn bàn phím :	Đang cập nhật
+Công nghệ đèn bàn phím :	Không
+Màu đèn LED :	Không
+TouchPad :	Đang cập nhật
+Thông tin pin
+Loại PIN :	Lithium-Polymer
+PIN (Cell) :	4 Cell
+PIN có thể tháo rời :	Không
+Power Supply :	65 W
+Hệ điều hành
+OS :	Windows 10
+Type :	64 bit
+Version :	Home Single Language
+Thiết kế & Trọng lượng
+Width (mm) :	306
+Depth (mm) :	212
+Height (mm) :	147
+Trọng lượng (kg) :	1.31
+Chất liệu mặt bên ngoài cùng :	Đang cập nhật
+Chất liệu khung màn hình :	Nhôm
+Chất liệu mặt bàn phím + kê tay :	Nhôm
+Chất liệu mặt lưng :	Nhôm
+Thông tin thêm
+Bản lề (Hinge / Kickstand) :	Hinge
+Tản nhiệt :	Đang cập nhật
+Thông tin hàng hóa
+P/N :	6ZF30PA
+Năm ra mắt :	2019
+Xuất xứ :	Trung Quốc
+Thời gian bảo hành :	12 Tháng
+Phụ kiện trong hộp
+Phụ kiện kèm theo :	Sạc, Sách HDSD

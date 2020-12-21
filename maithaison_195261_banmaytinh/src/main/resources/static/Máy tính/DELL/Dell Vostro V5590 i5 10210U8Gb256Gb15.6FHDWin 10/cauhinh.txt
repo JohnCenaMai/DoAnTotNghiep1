@@ -1,0 +1,106 @@
+﻿Bộ xử lý
+Hãng CPU :	Intel
+Công nghệ CPU :	Core i5
+Loại CPU :	10210U
+Số lõi :	4
+Số luồng :	8
+Tốc độ CPU :	1.60 GHz
+Tốc độ tối đa :	4.20 GHz
+Bộ nhớ đệm :	6 MB Smart Cache
+Tốc độ BUS :	4 GT/s
+RAM
+Dung lượng RAM :	8 GB
+Loại RAM :	DDR4
+Tốc độ RAM :	2666 MHz
+Số khe cắm rời :	1
+Số khe RAM còn lại :	0
+Số RAM onboard :	0
+Hỗ trợ RAM tối đa :	24 GB
+Màn hình
+Kích thước màn hình :	15.6"
+Loại màn hình :	LED
+Độ phân giải :	1920 x 1080 Pixel
+Tần số quét :	60 Hz
+Độ sáng :	Đang cập nhật
+Tấm nền :	Đang cập nhật
+Công nghệ màn hình :	Anti-glare LED-backlit
+Độ phủ màu :	Đang cập nhật
+Tỷ lệ màn hình :	16:09
+Độ tương phản :	Đang cập nhật
+Màn hình cảm ứng :	Không
+Loại cảm ứng :	Không
+Đồ họa
+Hãng (Card onboard) :	Intel
+Card onboard :	UHD Graphics
+Model (Card onboard) :	UHD
+Xung nhịp (Card onboard) :	300 MHz
+Xung nhịp tối đa (Card onboard) :	1100 MHz
+Lưu trữ
+Kiểu SSD :	M2. PCIe
+Dung lượng SSD :	256 GB
+Tốc độ đọc/ghi :	Đang cập nhật
+Hỗ trợ công nghệ Optane :	Đang cập nhật
+Tổng số khe cắm SSD/HDD :	Đang cập nhật
+Số khe SSD/HDD còn lại :	Đang cập nhật
+Chuẩn M2 :	Đang cập nhật
+Giao tiếp & Kết nối
+Số cổng Type-C :	0
+Số cổng USB 3.0 :	Đang cập nhật
+Số cổng USB 2.0 :	Đang cập nhật
+Số cổng HDMI :	Đang cập nhật
+Số cổng VGA :	Đang cập nhật
+Số cổng Card reader :	Đang cập nhật
+Số cổng DC-in jack :	1
+Số cổng 3.5 mm :	Đang cập nhật
+Số cổng Thunderbolt :	Đang cập nhật
+Số cổng LAN :	0
+Wireless :	802.11 ac
+Bluetooth :	Đang cập nhật
+Khe đọc thẻ nhớ :	1
+Senser :	FingerPrint
+Webcame :	HD Web Camera
+Âm thanh
+Số Loa :	2
+Công nghệ âm thanh :	Đang cập nhật
+Bảo mật
+Mở khóa vân tay (Finger Print) :	Có
+Nhận diện khuôn mặt :	Không
+Mật khẩu :	Không
+Ổ đĩa quang
+Loại ổ đĩa quang :	Không
+Ổ đĩa quang :	Không
+Bàn phím & TouchPad
+Kiểu bàn phím :	Đang cập nhật
+Bàn phím số :	Có
+Loại đèn bàn phím :	Đang cập nhật
+Công nghệ đèn bàn phím :	Đang cập nhật
+Màu đèn LED :	Đang cập nhật
+TouchPad :	Đang cập nhật
+Thông tin pin
+Loại PIN :	Lithium-Polymer
+PIN (Cell) :	3 Cell
+PIN có thể tháo rời :	Không
+Power Supply :	Đang cập nhật
+Hệ điều hành
+OS :	Windows 10
+Type :	64 bit
+Version :	Home Single Language
+Thiết kế & Trọng lượng
+Width (mm) :	Đang cập nhật
+Depth (mm) :	Đang cập nhật
+Height (mm) :	Đang cập nhật
+Trọng lượng (kg) :	1.66
+Chất liệu mặt bên ngoài cùng :	Đang cập nhật
+Chất liệu khung màn hình :	Đang cập nhật
+Chất liệu mặt bàn phím + kê tay :	Đang cập nhật
+Chất liệu mặt lưng :	Đang cập nhật
+Thông tin thêm
+Bản lề (Hinge / Kickstand) :	Đang cập nhật
+Tản nhiệt :	Đang cập nhật
+Thông tin hàng hóa
+P/N :	70197465
+Năm ra mắt :	Đang cập nhật
+Xuất xứ :	Trung Quốc
+Thời gian bảo hành :	12 Tháng
+Phụ kiện trong hộp
+Phụ kiện kèm theo :	Adapter

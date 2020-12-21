@@ -1,0 +1,113 @@
+﻿Bộ xử lý
+Hãng CPU :	AMD
+Công nghệ CPU :	Ryzen 5
+Loại CPU :	3500U
+Số lõi :	4
+Số luồng :	8
+Tốc độ CPU :	2.1GHz
+Tốc độ tối đa :	3.7GHz
+Bộ nhớ đệm :	4 MB L3 Cache
+Tốc độ BUS :	Đang cập nhật
+RAM
+Dung lượng RAM :	8 GB
+Loại RAM :	DDR4
+Tốc độ RAM :	2400 MHz
+Số khe cắm rời :	1
+Số khe RAM còn lại :	0
+Số RAM onboard :	1
+Hỗ trợ RAM tối đa :	12 GB
+Màn hình
+Kích thước màn hình :	15.6"
+Loại màn hình :	LED
+Độ phân giải :	1920 x 1080 Pixel
+Tần số quét :	60 Hz
+Độ sáng :	Đang cập nhật
+Tấm nền :	TN
+Công nghệ màn hình :	Acer ComfyView LED-backlit
+Độ phủ màu :	45% NTSC
+Tỷ lệ màn hình :	Đang cập nhật
+Độ tương phản :	Đang cập nhật
+Màn hình cảm ứng :	Không
+Loại cảm ứng :	Không
+Đồ họa
+Hãng (Card onboard) :	AMD
+Card onboard :	Radeon Graphics
+Model (Card onboard) :	Vega 8
+Xung nhịp (Card onboard) :	Đang cập nhật
+Xung nhịp tối đa (Card onboard) :	Đang cập nhật
+Hãng (Card rời) :	AMD
+Card rời :	Radeon Series
+Model (Card rời) :	625
+Bộ nhớ đồ họa (Card rời) :	2 GB
+Kiểu bộ nhớ :	GDDR5
+Xung nhịp (Card rời) :	Đang cập nhật
+Xung nhịp tối đa (Card rời) :	Đang cập nhật
+Lưu trữ
+Kiểu SSD :	M2. PCIe
+Dung lượng SSD :	512 GB
+Tốc độ đọc/ghi :	Đang cập nhật
+Hỗ trợ công nghệ Optane :	Có
+Tổng số khe cắm SSD/HDD :	2
+Số khe SSD/HDD còn lại :	1
+Chuẩn M2 :	Đang cập nhật
+Giao tiếp & Kết nối
+Số cổng Type-C :	0
+Số cổng USB 3.0 :	2
+Số cổng USB 2.0 :	1
+Số cổng HDMI :	1
+Số cổng VGA :	0
+Số cổng Card reader :	0
+Số cổng DC-in jack :	1
+Số cổng 3.5 mm :	1
+Số cổng Thunderbolt :	0
+Số cổng LAN :	1
+Wireless :	802.11 a/b/g/n/ac
+Bluetooth :	v4.2
+Khe đọc thẻ nhớ :	Không
+Senser :	Không
+Webcame :	480p FaceTime camera
+Âm thanh
+Số Loa :	2
+Công nghệ âm thanh :	Đang cập nhật
+Bảo mật
+Mở khóa vân tay (Finger Print) :	Không
+Nhận diện khuôn mặt :	Không
+Mật khẩu :	Có
+Ổ đĩa quang
+Loại ổ đĩa quang :	Không
+Ổ đĩa quang :	Không
+Bàn phím & TouchPad
+Kiểu bàn phím :	Đang cập nhật
+Bàn phím số :	Có
+Loại đèn bàn phím :	Không
+Công nghệ đèn bàn phím :	Không
+Màu đèn LED :	Không
+TouchPad :	Đang cập nhật
+Thông tin pin
+Loại PIN :	Lithium-Ion, Liền
+PIN (Cell) :	2 Cells
+PIN có thể tháo rời :	Không
+Power Supply :	Đang cập nhật
+Hệ điều hành
+OS :	Windows 10 Home
+Type :	64 bit
+Version :	Home
+Thiết kế & Trọng lượng
+Width (mm) :	363.4
+Depth (mm) :	250.2
+Height (mm) :	19.9
+Trọng lượng (kg) :	1.7kg
+Chất liệu mặt bên ngoài cùng :	Nhựa
+Chất liệu khung màn hình :	Nhựa
+Chất liệu mặt bàn phím + kê tay :	Nhựa
+Chất liệu mặt lưng :	Nhựa
+Thông tin thêm
+Bản lề (Hinge / Kickstand) :	Bản lề mở 180 độ
+Tản nhiệt :	Đang cập nhật
+Thông tin hàng hóa
+P/N :	NX.HVSSV.001
+Năm ra mắt :	2018
+Xuất xứ :	Trung Quốc
+Thời gian bảo hành :	12 Tháng
+Phụ kiện trong hộp
+Phụ kiện kèm theo :	sạc, sách HDSD

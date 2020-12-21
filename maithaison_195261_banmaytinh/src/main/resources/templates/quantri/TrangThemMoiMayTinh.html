@@ -1,0 +1,529 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Trang thêm mới máy tính</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+
+    <script>
+        $(document).ready(function() {
+            $("#mamaytinh1").click(function() {
+                $('#v-pills-qlmt').load("TrangChiTietMayTinh.html");
+                //$("#v-pills-qldt").load("TrangChiTietMayTinh.html");
+            });
+        });
+    </script>
+
+    <style>
+        .mau {
+            color: rgb(91, 91, 155);
+            font-weight: bold;
+        }
+        
+        .vungchinh {
+            background: url("../DienThoai/admin_background.jpg");
+            
+            background-repeat: no-repeat;
+            background-size: 1235px 720px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <div style="width: 1525px;height: 720px;display: flex;background-color: #dcebe3;">
+        <div style="background-color: #e5eaf5;width: 300px;height: 720px;">
+            <div style="margin: 5px;overflow: auto;border: 1px solid rgb(255, 224, 224);border-radius: 5px;">
+                <div style="float: left;padding: 10px;">
+                    <img src="../anh1.PNG" class="rounded-circle" style="width: 50px;height: 35px;">
+                </div>
+                <div style="font-weight: bold;color: rgb(0, 0, 0);font-size: 20px;float: left;margin-left: 15px;margin-top: 12px;">
+                    FPT SHOP
+                </div>
+            </div>
+            <div style="margin: 5px;overflow: auto;border: 1px solid rgb(255, 228, 228);border-radius: 5px;">
+                <div style="float: left;padding: 10px;">
+                    <img src="../anh1.PNG" class="rounded-circle" style="width: 35px;height: 35px;">
+                </div>
+                <div style="font-weight: bold;color: rgb(0, 0, 0);font-size: 20px;float: left;margin-left: 15px;margin-top: 12px;">
+                    MAI THÁI SƠN
+                </div>
+            </div>
+            <div style="padding-left: 5px;padding-right: 5px;margin-top: 15px;" class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link" id="v-pills-dx-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                    <i class="fas fa-sign-out-alt"><span style="margin-left: 10px;">Đăng xuất</span></i>
+                </a>
+                <a class="nav-link active" id="v-pills-tttk-tab" data-toggle="pill" href="#v-pills-tttk" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                    <i class="fas fa-user-circle"><span style="margin-left: 10px;">Thông tin tìm kiếm</span></i>
+                </a>            
+                <a class="nav-link" id="v-pills-qldt-tab" data-toggle="pill" href="#v-pills-ttcpu" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                    <i class="fas fa-microchip"><span style="margin-left: 10px;">Thông tin CPU</span></i>
+                </a>
+                <a class="nav-link" id="v-pills-qlmtb-tab" data-toggle="pill" href="#v-pills-ttram" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                    <i class="fas fa-memory"><span style="margin-left: 10px;">Thông tin RAM</span></i>
+                </a>
+                <a class="nav-link" id="v-pills-qlkh-tab" data-toggle="pill" href="#v-pills-ttdh" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                    <i class="fab fa-affiliatetheme"><span style="margin-left: 10px;font-weight: bold;">Thông tin đồ họa</span></i>
+                </a>
+                <a class="nav-link" id="v-pills-qlbl-tab" data-toggle="pill" href="#v-pills-ttmh" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                    <i class="fas fa-desktop"><span style="margin-left: 10px;">Thông tin màn hình</span></i>
+                </a>
+                <a class="nav-link" id="v-pills-qlhd-tab" data-toggle="pill" href="#v-pills-ttloa" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                    <i class="fas fa-volume-up"><span style="margin-left: 10px;">Thông tin loa</span></i>
+                </a>
+                <a class="nav-link" id="v-pills-qlhd-tab" data-toggle="pill" href="#v-pills-tthdh" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                    <i class="fas fa-info-circle"><span style="margin-left: 10px;">Thông tin hệ điều hành</span></i>
+                </a>
+                <a class="nav-link" id="v-pills-qlhd-tab" data-toggle="pill" href="#v-pills-ttcl" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                    <i class="fab fa-mdb"><span style="margin-left: 10px;">Thông tin chất liệu</span></i>
+                </a>
+                <a class="nav-link" id="v-pills-qlhd-tab" data-toggle="pill" href="#v-pills-ttbp" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                    <i class="fas fa-keyboard"><span style="margin-left: 10px;">Thông tin bàn phím</span></i>
+                </a>
+                <a class="nav-link" id="v-pills-qlhd-tab" data-toggle="pill" href="#v-pills-ttbn" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                    <i class="fas fa-memory"><span style="margin-left: 10px;">Thông tin bộ nhớ</span></i>
+                </a>              
+                <a class="nav-link" id="v-pills-qlmt-tab" data-toggle="pill" href="#v-pills-ctmt" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                    <i class="fas fa-info-circle"><span style="margin-left: 10px;">Thông tin máy tính</span></i>
+                </a>
+            </div>
+        </div>
+
+        <div style="width: 1235px;height: 720px;" class="tab-content vungchinh" id="v-pills-tabContent">
+            <div style="font-weight: bold;padding: 15px;width: 1235px;height: 50px;background-color: white;">
+                <i class="fas fa-user-shield"><span style="margin-left: 10px;">ADMIN PAGE - TRANG CHI TIẾT MÁY TÍNH - NGÀY 3/10/2020</span></i>
+            </div>
+            <!--Trang chính-->
+            <div style="padding: 15px;width: 1235px;height: 720px;" class="tab-pane fade show active" id="v-pills-tc" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                <h4 style="font-weight: bold;color: rgb(255, 255, 255);">Trang chính</h4>
+            </div>
+            <!--Thông tin tài khoản-->
+            <div style="padding: 15px;" class="tab-pane" id="v-pills-tttk" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                <h4 style="font-weight: bold;color: rgb(255, 255, 255);">Thông tin tài khoản</h4>
+                <form action="" style="margin-top: 10px;color: white;">
+                    <div class="form-group">
+                        <label>Họ và tên:</label>
+                        <input disabled type="text" class="form-control" placeholder="Nhập họ và tên..." name="hoten">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input disabled type="email" class="form-control" id="email" placeholder="Nhập email..." name="email">
+                    </div>
+                    <div class="form-group">
+                        <label>Mật khẩu:</label>
+                        <input type="text" class="form-control" placeholder="Thay đổi mật khẩu..." name="matkhau">
+                    </div>
+                    <div class="form-group">
+                        <label>Số điện thoại:</label>
+                        <input type="text" class="form-control" placeholder="Thay đổi số điện thoại..." name="sodienthoai">
+                    </div>
+                    <div class="form-group">
+                        <label>Địa chỉ:</label>
+                        <input type="text" class="form-control" placeholder="Thay đổi địa chỉ..." name="diachi">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Lưu thông tin</button>
+                </form>
+            </div>
+            <!--chi tiết máy tính-->
+            <div style="padding: 15px;" class="tab-pane fade" id="v-pills-ctmt" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                <h4 style="font-weight: bold;color: rgb(255, 255, 255);">Thông tin cơ bản máy tính</h4>
+                <form th:action="@{/trangquantri/xulythemmoimaytinh}">
+                	<div class="form-group">
+                        <label style="color: white;">Mã máy tính:</label>
+                        <input class="form-control" placeholder="mã máy tính..." name="mamaytinh" th:value="${mamaytinh}">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Tên máy tính:</label>
+                        <input class="form-control" placeholder="tên máy tính..." name="tensanpham">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Xuất xứ:</label>
+                        <input class="form-control" placeholder="xuất xứ..." name="xuatxu">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Thời gian bảo hành:</label>
+                        <input class="form-control" placeholder="thời gian bảo hành..." name="thoigianbaohanh">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Chiều rộng:</label>
+                        <input class="form-control" placeholder="chiều rộng..." name="chieurong">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Chiều cao:</label>
+                        <input class="form-control" placeholder="chiều cao..." name="chieucao">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Chiều sâu:</label>
+                        <input class="form-control" placeholder="chiều sâu..." name="chieusau">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Năm ra mắt:</label>
+                        <input class="form-control" placeholder="năm ra mắt..." name="namramat">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Trọng lượng:</label>
+                        <input class="form-control" placeholder="trọng lượng..." name="trongluong">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Số lượng:</label>
+                        <input class="form-control" placeholder="số lượng..." name="soluong">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Giá cả:</label>
+                        <input class="form-control" placeholder="giá cả..." name="gia">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Hình ảnh:</label>
+                        <input class="form-control" placeholder="hình ảnh..." name="hinhanh">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <!--thông tin cpu-->
+            <div style="padding: 15px;" class="tab-pane fade" id="v-pills-ttcpu" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                <h4 style="font-weight: bold;color: rgb(255, 255, 255);">Thông tin về CPU</h4>
+                <form th:action="@{/trangquantri/kiemtratontaiboxuly}">
+                	<div class="form-group">
+                        <label style="color: white;">Mã CPU:</label>
+                        <input class="form-control" placeholder="mã cpu..." name="macpu" th:value="${maboxuly}">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Công nghệ CPU:</label>
+                        <input class="form-control" placeholder="công nghệ cpu..." name="congnghecpu">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Loại CPU:</label>
+                        <input class="form-control" placeholder="loại cpu..." name="loaicpu">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Hãng CPU:</label>
+                        <input class="form-control" placeholder="hãng cpu..." name="hangcpu">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Tốc độ CPU:</label>
+                        <input class="form-control" placeholder="tốc độ cpu..." name="tocdo">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Tốc độ tối đa CPU:</label>
+                        <input class="form-control" placeholder="tốc độ tối đa cpu..." name="tocdotoida">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Bộ nhớ đệm CPU:</label>
+                        <input class="form-control" placeholder="bộ nhớ đệm cpu..." name="bonhodem">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Tốc độ bus CPU:</label>
+                        <input class="form-control" placeholder="Tốc độ bus cpu..." name="tocdobus">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Số luồng CPU:</label>
+                        <input class="form-control" placeholder="số luồng cpu..." name="soluong">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Số lõi CPU:</label>
+                        <input class="form-control" placeholder="số lõi cpu..." name="soloi">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <!--thông tin ram-->
+            <div style="padding: 15px;" class="tab-pane fade" id="v-pills-ttram" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                <h4 style="font-weight: bold;color: rgb(255, 255, 255);">Thông tin về RAM</h4>
+                <form th:action="@{/trangquantri/kiemtratontairam}">
+                	<div class="form-group">
+                        <label style="color: white;">Mã RAM:</label>
+                        <input class="form-control" placeholder="mã ram..." name="maram" th:value="${maram}">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Dung lượng RAM:</label>
+                        <input class="form-control" placeholder="dung lượng ram..." name="dungluong">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Loại RAM:</label>
+                        <input class="form-control" placeholder="loại ram..." name="loairam">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Tốc độ RAM:</label>
+                        <input class="form-control" placeholder="tốc độ ram..." name="tocdoram">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Số khe cắm rời:</label>
+                        <input class="form-control" placeholder="số khe cắm rời..." name="sokhecamroi">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Số khe ram còn lại:</label>
+                        <input class="form-control" placeholder="số khe ram còn lại..." name="sokheramconlai">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Số ram trên board:</label>
+                        <input class="form-control" placeholder="số ram trên board..." name="soramonboard">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Số ram tối đa:</label>
+                        <input class="form-control" placeholder="số ram tối đa..." name="soramtoida">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <!--thông tin màn hình-->
+            <div style="padding: 15px;" class="tab-pane fade" id="v-pills-ttmh" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                <h4 style="font-weight: bold;color: rgb(255, 255, 255);">Thông tin về màn hình</h4>
+                <form th:action="@{/trangquantri/kiemtratontaimanhinh}">
+                	<div class="form-group">
+                        <label style="color: white;">Mã màn hình:</label>
+                        <input class="form-control" placeholder="mã màn hình..." name="mamanhinh" th:value="${mamanhinh}">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Loại cảm ứng:</label>
+                        <input class="form-control" placeholder="loại cảm ứng..." name="loaicamung">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Màn hình cảm ứng:</label>
+                        <input class="form-control" placeholder="màn hình cảm ứng..." name="manhinhcamung">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Độ tương phản:</label>
+                        <input class="form-control" placeholder="độ tương phản..." name="dotuongphan">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Tỷ lệ màn hình:</label>
+                        <input class="form-control" placeholder="tỷ lệ màn hình..." name="tylemanhinh">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Độ phủ màu:</label>
+                        <input class="form-control" placeholder="độ phủ màu..." name="dophumau">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Công nghệ:</label>
+                        <input class="form-control" placeholder="công nghệ..." name="congnghe">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Độ sáng:</label>
+                        <input class="form-control" placeholder="độ sáng..." name="dosang">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Độ phân giải:</label>
+                        <input class="form-control" placeholder="độ phân giải..." name="dophangiai">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Tần số quét:</label>
+                        <input class="form-control" placeholder="tần số quét..." name="tansoquet">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Loại màn hình:</label>
+                        <input class="form-control" placeholder="loại màn hình..." name="loaimanhinh">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Kích thước màn hình:</label>
+                        <input class="form-control" placeholder="kích thước màn hình..." name="kichthuocmanhinh">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <!--thông tin đồ họa-->
+            <div style="padding: 15px;" class="tab-pane fade" id="v-pills-ttdh" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                <h4 style="font-weight: bold;color: rgb(255, 255, 255);">Thông tin về đồ họa</h4>
+                <form th:action="@{/trangquantri/kiemtratontaidohoa}">
+                	<div class="form-group">
+                        <label style="color: white;">Mã đồ họa:</label>
+                        <input class="form-control" placeholder="mã đồ họa..." name="madohoa" th:value="${madohoa}">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Hãng đồ họa:</label>
+                        <input class="form-control" placeholder="hãng đồ họa..." name="hang">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Xung nhịp đồ họa:</label>
+                        <input class="form-control" placeholder="xung nhịp đồ họa..." name="xungnhip">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Xung nhịp tối đa:</label>
+                        <input class="form-control" placeholder="xung nhịp tối đa..." name="xungnhiptoida">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Model:</label>
+                        <input class="form-control" placeholder="model đồ họa..." name="model">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Card on board:</label>
+                        <input class="form-control" placeholder="card on board..." name="cardonboard">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <!--thông tin loa-->
+            <div style="padding: 15px;" class="tab-pane fade" id="v-pills-ttloa" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                <h4 style="font-weight: bold;color: rgb(255, 255, 255);">Thông tin về loa</h4>
+                <form th:action="@{/trangquantri/kiemtratontailoa}">
+                	<div class="form-group">
+                        <label style="color: white;">Mã loa:</label>
+                        <input class="form-control" placeholder="mã loa..." name="maloa" th:value="${maloa}">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Số loa:</label>
+                        <input class="form-control" placeholder="số loa..." name="soloa">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Công nghệ âm thanh:</label>
+                        <input class="form-control" placeholder="công nghệ âm thanh..." name="congngheamthanh">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <!--thông tin pin-->
+            <div style="padding: 15px;" class="tab-pane fade" id="v-pills-ttpin" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                <h4 style="font-weight: bold;color: rgb(255, 255, 255);">Thông tin về pin</h4>
+                <form th:action="@{/trangquantri/kiemtratontaipin}">
+                	<div class="form-group">
+                        <label style="color: white;">Mã pin:</label>
+                        <input class="form-control" placeholder="mã pin..." name="mapin" th:value="${mapin}">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Loại pin:</label>
+                        <input class="form-control" placeholder="loại pin..." name="loaipin">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Số cell:</label>
+                        <input class="form-control" placeholder="số cell..." name="cell">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Tháo rời:</label>
+                        <input class="form-control" placeholder="tháo rời..." name="thaoroi">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Nguồn cung:</label>
+                        <input class="form-control" placeholder="nguồn cung..." name="powersupply">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <!--thông tin hệ điều hành-->
+            <div style="padding: 15px;" class="tab-pane fade" id="v-pills-tthdh" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                <h4 style="font-weight: bold;color: rgb(255, 255, 255);">Thông tin về hệ điều hành</h4>
+                <form th:action="@{/trangquantri/kiemtratontaihedieuhanh}">
+                    <div class="form-group">
+                        <label style="color: white;">Phiên bản hệ điều hành:</label>
+                        <input class="form-control" placeholder="phiên bản hệ điều hành..." name="phienbanhedieuhanh">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Tên hệ điều hành:</label>
+                        <input class="form-control" placeholder="tên hệ điều hành..." name="ten">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Kiểu hệ điều hành:</label>
+                        <input class="form-control" placeholder="kiểu hệ điều hành..." name="kieu">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <!--thông tin chất liệu-->
+            <div style="padding: 15px;" class="tab-pane fade" id="v-pills-ttcl" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                <h4 style="font-weight: bold;color: rgb(255, 255, 255);">Thông tin về chất liệu</h4>
+                <form th:action="@{/trangquantri/kiemtratontaichatlieu}">
+                	<div class="form-group">
+                        <label style="color: white;">Mã chất liệu:</label>
+                        <input class="form-control" placeholder="mã chất liệu..." name="machatlieu" th:value="${machatlieu}">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Chất liệu mặt ngoài cùng:</label>
+                        <input class="form-control" placeholder="chất liệu mặt ngoài cùng..." name="chatlieumatbenngoaicung">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Chất liệu khung màn hình:</label>
+                        <input class="form-control" placeholder="chất liệu khung màn hình..." name="chatlieukhungmanhinh">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Chất liệu mặt bàn phím:</label>
+                        <input class="form-control" placeholder="chất liệu mặt bàn phím..." name="chatlieumatbanphim">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Chất liệu mặt lưng:</label>
+                        <input class="form-control" placeholder="chất liệu mặt lưng..." name="chatlieumatlung">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <!--thông tin bàn phím-->
+            <div style="padding: 15px;" class="tab-pane fade" id="v-pills-ttbp" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                <h4 style="font-weight: bold;color: rgb(255, 255, 255);">Thông tin về bàn phím</h4>
+                <form th:action="@{/trangquantri/kiemtratontaibanphim}">
+                	<div class="form-group">
+                        <label style="color: white;">Mã bàn phím:</label>
+                        <input class="form-control" placeholder="mã bàn phím..." name="mabanphim" th:value="${mabanphim}">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Kiểu bàn phím:</label>
+                        <input class="form-control" placeholder="kiểu bàn phím..." name="kieubanphim">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Bàn phím số:</label>
+                        <input class="form-control" placeholder="bàn phím số..." name="banphimso">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Loại đèn bàn phím:</label>
+                        <input class="form-control" placeholder="loại đèn bàn phím..." name="loaidenbanphim">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Màu đèn led:</label>
+                        <input class="form-control" placeholder="màu đèn led..." name="maudenled">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Công nghệ đèn bàn phím:</label>
+                        <input class="form-control" placeholder="công nghệ đèn bàn phím..." name="congnghedenbanphim">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Loại cảm ứng:</label>
+                        <input class="form-control" placeholder="loại cảm ứng..." name="touchpad">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <!--thông tin bộ nhớ-->
+            <div style="padding: 15px;" class="tab-pane fade" id="v-pills-ttbn" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                <h4 style="font-weight: bold;color: rgb(255, 255, 255);">Thông tin về bộ nhớ</h4>
+                <form th:action="@{/trangquantri/kiemtratontaibonho}">
+                	<div class="form-group">
+                        <label style="color: white;">Mã bộ nhớ:</label>
+                        <input class="form-control" placeholder="mã bộ nhớ..." name="mabonho" th:value="${mabonho}">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Kiểu bộ nhớ:</label>
+                        <input class="form-control" placeholder="kiểu bộ nhớ..." name="kieubonho">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Dung lượng bộ nhớ:</label>
+                        <input class="form-control" placeholder="dung lượng bộ nhớ..." name="dungluongbonho">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Tốc độ đọc ghi bộ nhớ:</label>
+                        <input class="form-control" placeholder="tốc độ đọc ghi bộ nhớ..." name="tocdodocghi">
+                    </div>
+                    <div class="form-group">
+                        <label style="color: white;">Số khe cắm bộ nhớ:</label>
+                        <input class="form-control" placeholder="số khe cắm bộ nhớ..." name="sokhecam">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+﻿Bộ xử lý
+Hãng CPU :	Intel
+Công nghệ CPU :	Core i7
+Loại CPU :	8550U
+Số lõi :	4
+Số luồng :	8
+Tốc độ CPU :	1.80 GHz
+Tốc độ tối đa :	4.00 GHz
+Bộ nhớ đệm :	8 MB Smart Cache
+Tốc độ BUS :	4 GT/s
+RAM
+Dung lượng RAM :	8 GB
+Loại RAM :	DDR4
+Tốc độ RAM :	2400 MHz
+Số khe cắm rời :	Đang cập nhật
+Số khe RAM còn lại :	0
+Số RAM onboard :	Đang cập nhật
+Hỗ trợ RAM tối đa :	32 GB
+Màn hình
+Kích thước màn hình :	14.0"
+Loại màn hình :	LED
+Độ phân giải :	1920 x 1080 Pixel
+Tần số quét :	Đang cập nhật
+Độ sáng :	Đang cập nhật
+Tấm nền :	Đang cập nhật
+Công nghệ màn hình :	LED-backlit
+Độ phủ màu :	Đang cập nhật
+Tỷ lệ màn hình :	Đang cập nhật
+Độ tương phản :	Đang cập nhật
+Màn hình cảm ứng :	Có
+Loại cảm ứng :	Đang cập nhật
+Đồ họa
+Hãng (Card onboard) :	Intel
+Card onboard :	UHD Graphics
+Model (Card onboard) :	620
+Xung nhịp (Card onboard) :	300 MHz
+Xung nhịp tối đa (Card onboard) :	1100 MHz
+Lưu trữ
+Kiểu SSD :	Đang cập nhật
+Dung lượng SSD :	256 GB
+Tốc độ đọc/ghi :	Đang cập nhật
+Hỗ trợ công nghệ Optane :	Đang cập nhật
+Tổng số khe cắm SSD/HDD :	Đang cập nhật
+Số khe SSD/HDD còn lại :	Đang cập nhật
+Chuẩn M2 :	Đang cập nhật
+Giao tiếp & Kết nối
+Số cổng Type-C :	Đang cập nhật
+Số cổng USB 3.0 :	Đang cập nhật
+Số cổng USB 2.0 :	Đang cập nhật
+Số cổng HDMI :	Đang cập nhật
+Số cổng VGA :	Đang cập nhật
+Số cổng Card reader :	Đang cập nhật
+Số cổng DC-in jack :	Đang cập nhật
+Số cổng 3.5 mm :	Đang cập nhật
+Số cổng Thunderbolt :	Đang cập nhật
+Số cổng LAN :	Đang cập nhật
+Wireless :	802.11 ac
+Bluetooth :	Đang cập nhật
+Khe đọc thẻ nhớ :	không
+Senser :	Không
+Webcame :	HD Web Camera
+Âm thanh
+Số Loa :	Đang cập nhật
+Công nghệ âm thanh :	Đang cập nhật
+Bảo mật
+Mở khóa vân tay (Finger Print) :	Có
+Nhận diện khuôn mặt :	Không
+Mật khẩu :	Không
+Ổ đĩa quang
+Loại ổ đĩa quang :	Đang cập nhật
+Ổ đĩa quang :	Không
+Bàn phím & TouchPad
+Kiểu bàn phím :	Đang cập nhật
+Bàn phím số :	Không
+Loại đèn bàn phím :	Đang cập nhật
+Công nghệ đèn bàn phím :	Đang cập nhật
+Màu đèn LED :	Đang cập nhật
+TouchPad :	Đang cập nhật
+Thông tin pin
+Loại PIN :	Lithium-ion
+PIN (Cell) :	2 Cell
+PIN có thể tháo rời :	Không
+Power Supply :	Đang cập nhật
+Hệ điều hành
+OS :	Windows 10
+Type :	64 bit
+Version :	Home Single Language
+Thiết kế & Trọng lượng
+Width (mm) :	Đang cập nhật
+Depth (mm) :	Đang cập nhật
+Height (mm) :	Đang cập nhật
+Trọng lượng (kg) :	0.97
+Chất liệu mặt bên ngoài cùng :	Đang cập nhật
+Chất liệu khung màn hình :	Đang cập nhật
+Chất liệu mặt bàn phím + kê tay :	Đang cập nhật
+Chất liệu mặt lưng :	Đang cập nhật
+Thông tin thêm
+Bản lề (Hinge / Kickstand) :	Đang cập nhật
+Tản nhiệt :	Đang cập nhật
+Thông tin hàng hóa
+P/N :	NX.H7HSV.002
+Năm ra mắt :	Đang cập nhật
+Xuất xứ :	Trung Quốc
+Thời gian bảo hành :	12 Tháng
+Phụ kiện trong hộp
+Phụ kiện kèm theo :	sạc, sách...
