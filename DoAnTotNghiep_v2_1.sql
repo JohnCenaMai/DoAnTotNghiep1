@@ -1028,200 +1028,719 @@ exec check_ramdienthoai @maram = 'ram_18',
 	@loairam = 'LPDDR5'
 
 -- hinh anh dien thoai
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+
+
+values('dt_01',N'/Điện thoại/Apple/iPhone 11 64GB/anh1.PNG')
+
+
+
+
+
+
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+values('dt_02',N'/Điện thoại/Apple/iPhone 12 64GB/anh1.PNG')
+
+
+
+
+
+
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+values('dt_03',N'/Điện thoại/Apple/iPhone 12 Mini 64GB/anh1.PNG')
+
+
+
+
+
+
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+values('dt_04',N'/Điện thoại/Apple/iPhone 12 Pro 128GB/anh1.PNG')
+
+
+
+
+
+
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+values('dt_05',N'/Điện thoại/Apple/iPhone 12 Pro Max 128GB/anh1.PNG')
+
+
+
+
+
+
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+values('dt_06',N'/Điện thoại/Nokia/Nokia 2.4/anh1.PNG')
+
+
+
+
+
+
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+values('dt_06',N'/Điện thoại/Nokia/Nokia 2.4/anh2.PNG')
+
+
+
+
+
+
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+values('dt_06',N'/Điện thoại/Nokia/Nokia 2.4/anh3.PNG')
+
+
+
+
+
+
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+values('dt_07',N'/Điện thoại/Nokia/Nokia 3.2 3GB-32GB/anh1.PNG')
+
+
+
+
+
+
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+values('dt_07',N'/Điện thoại/Nokia/Nokia 3.2 3GB-32GB/anh2.PNG')
+
+
+
+
+
+
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+values('dt_07',N'/Điện thoại/Nokia/Nokia 3.2 3GB-32GB/anh3.PNG')
+
+
+
+
+
+
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+values('dt_08',N'/Điện thoại/Nokia/Nokia 3.4 4GB - 64GB/anh1.PNG')
+
+
+
+
+
+
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+values('dt_08',N'/Điện thoại/Nokia/Nokia 3.4 4GB - 64GB/anh2.PNG')
+
+
+
+
+
+
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+values('dt_08',N'/Điện thoại/Nokia/Nokia 3.4 4GB - 64GB/anh3.PNG')
+
+
+
+
+
+
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+values('dt_09',N'/Điện thoại/Nokia/Nokia 5.3 3GB - 64GB/anh1.PNG')
+
+
+
+
+
+
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+values('dt_09',N'/Điện thoại/Nokia/Nokia 5.3 3GB - 64GB/anh2.PNG')
+
+
+
+
+
+
+
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_01',N'\Điện thoại\Apple\iPhone 11 64GB\anh1.PNG')
+
+
+values('dt_09',N'/Điện thoại/Nokia/Nokia 5.3 3GB - 64GB/anh3.PNG')
+
+
+
+
+
+
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+values('dt_10',N'/Điện thoại/Nokia/Nokia 8.3 5G/anh1.PNG')
+
+
+
+
+
+
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+values('dt_10',N'/Điện thoại/Nokia/Nokia 8.3 5G/anh2.PNG')
+
+
+
+
+
+
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+values('dt_10',N'/Điện thoại/Nokia/Nokia 8.3 5G/anh3.PNG')
+
+
+
+
+
+
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+values('dt_11',N'/Điện thoại/Oppo/Oppo A52 6GB-128GB/anh1.PNG')
+
+
+
+
+
+
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+values('dt_11',N'/Điện thoại/Oppo/Oppo A52 6GB-128GB/anh2.PNG')
+
+
+
+
+
+
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+values('dt_11',N'/Điện thoại/Oppo/Oppo A52 6GB-128GB/anh3.PNG')
+
+
+
+
+
+
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+values('dt_12',N'/Điện thoại/Oppo/Oppo A53 4GB-128GB/anh1.PNG')
+
+
+
+
+
+
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+values('dt_12',N'/Điện thoại/Oppo/Oppo A53 4GB-128GB/anh2.PNG')
+
+
+
+
+
+
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+values('dt_12',N'/Điện thoại/Oppo/Oppo A53 4GB-128GB/anh3.PNG')
+
+
+
+
+
+
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+values('dt_13',N'/Điện thoại/Oppo/OPPO A93 8GB-128GB/anh1.PNG')
+
+
+
+
+
+
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+values('dt_13',N'/Điện thoại/Oppo/OPPO A93 8GB-128GB/anh2.PNG')
+
+
+
+
+
+
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+values('dt_13',N'/Điện thoại/Oppo/OPPO A93 8GB-128GB/anh3.PNG')
+
+
+
+
+
+
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+values('dt_14',N'/Điện thoại/Oppo/OPPO Reno4/anh1.PNG')
+
+
+
+
+
+
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+values('dt_14',N'/Điện thoại/Oppo/OPPO Reno4/anh2.PNG')
+
+
+
+
+
+
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+values('dt_14',N'/Điện thoại/Oppo/OPPO Reno4/anh3.PNG')
+
+
+
+
+
+
+
+insert into dienthoaihinhanh(madienthoai,hinhanh)
+
+
+values('dt_15',N'/Điện thoại/Oppo/Oppo Reno4 Pro/anh1.PNG')
+
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_02',N'\Điện thoại\Apple\iPhone 12 64GB\anh1.PNG')
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_03',N'\Điện thoại\Apple\iPhone 12 Mini 64GB\anh1.PNG')
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_04',N'\Điện thoại\Apple\iPhone 12 Pro 128GB\anh1.PNG')
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_05',N'\Điện thoại\Apple\iPhone 12 Pro Max 128GB\anh1.PNG')
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_06',N'\Điện thoại\Nokia\Nokia 2.4\anh1.PNG')
 
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_06',N'\Điện thoại\Nokia\Nokia 2.4\anh2.PNG')
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_06',N'\Điện thoại\Nokia\Nokia 2.4\anh3.PNG')
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_07',N'\Điện thoại\Nokia\Nokia 3.2 3GB-32GB\anh1.PNG')
+values('dt_15',N'/Điện thoại/Oppo/Oppo Reno4 Pro/anh2.PNG')
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_07',N'\Điện thoại\Nokia\Nokia 3.2 3GB-32GB\anh2.PNG')
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_07',N'\Điện thoại\Nokia\Nokia 3.2 3GB-32GB\anh3.PNG')
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_08',N'\Điện thoại\Nokia\Nokia 3.4 4GB - 64GB\anh1.PNG')
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_08',N'\Điện thoại\Nokia\Nokia 3.4 4GB - 64GB\anh2.PNG')
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_08',N'\Điện thoại\Nokia\Nokia 3.4 4GB - 64GB\anh3.PNG')
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_09',N'\Điện thoại\Nokia\Nokia 5.3 3GB - 64GB\anh1.PNG')
 
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_09',N'\Điện thoại\Nokia\Nokia 5.3 3GB - 64GB\anh2.PNG')
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_09',N'\Điện thoại\Nokia\Nokia 5.3 3GB - 64GB\anh3.PNG')
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_10',N'\Điện thoại\Nokia\Nokia 8.3 5G\anh1.PNG')
+values('dt_15',N'/Điện thoại/Oppo/Oppo Reno4 Pro/anh3.PNG')
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_10',N'\Điện thoại\Nokia\Nokia 8.3 5G\anh2.PNG')
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_10',N'\Điện thoại\Nokia\Nokia 8.3 5G\anh3.PNG')
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_11',N'\Điện thoại\Oppo\Oppo A52 6GB-128GB\anh1.PNG')
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_11',N'\Điện thoại\Oppo\Oppo A52 6GB-128GB\anh2.PNG')
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_11',N'\Điện thoại\Oppo\Oppo A52 6GB-128GB\anh3.PNG')
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_12',N'\Điện thoại\Oppo\Oppo A53 4GB-128GB\anh1.PNG')
 
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_12',N'\Điện thoại\Oppo\Oppo A53 4GB-128GB\anh2.PNG')
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_12',N'\Điện thoại\Oppo\Oppo A53 4GB-128GB\anh3.PNG')
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_13',N'\Điện thoại\Oppo\OPPO A93 8GB-128GB\anh1.PNG')
+values('dt_16',N'/Điện thoại/Samsung/Samsung Galaxy Note 20/anh1.PNG')
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_13',N'\Điện thoại\Oppo\OPPO A93 8GB-128GB\anh2.PNG')
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_13',N'\Điện thoại\Oppo\OPPO A93 8GB-128GB\anh3.PNG')
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_14',N'\Điện thoại\Oppo\OPPO Reno4\anh1.PNG')
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_14',N'\Điện thoại\Oppo\OPPO Reno4\anh2.PNG')
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_14',N'\Điện thoại\Oppo\OPPO Reno4\anh3.PNG')
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_15',N'\Điện thoại\Oppo\Oppo Reno4 Pro\anh1.PNG')
 
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_15',N'\Điện thoại\Oppo\Oppo Reno4 Pro\anh2.PNG')
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_15',N'\Điện thoại\Oppo\Oppo Reno4 Pro\anh3.PNG')
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_16',N'\Điện thoại\Samsung\Samsung Galaxy Note 20\anh1.PNG')
+values('dt_16',N'/Điện thoại/Samsung/Samsung Galaxy Note 20/anh2.PNG')
 
-insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_16',N'\Điện thoại\Samsung\Samsung Galaxy Note 20\anh2.PNG')
 
+
+
+
+
+
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_16',N'\Điện thoại\Samsung\Samsung Galaxy Note 20\anh3.PNG')
+
+
+values('dt_16',N'/Điện thoại/Samsung/Samsung Galaxy Note 20/anh3.PNG')
+
 
+
+
+
+
+
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_17',N'\Điện thoại\Samsung\Samsung Galaxy Note 20 Ultra\anh1.PNG')
+
+
+values('dt_17',N'/Điện thoại/Samsung/Samsung Galaxy Note 20 Ultra/anh1.PNG')
+
 
+
+
+
+
+
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_17',N'\Điện thoại\Samsung\Samsung Galaxy Note 20 Ultra\anh2.PNG')
+
+
+values('dt_17',N'/Điện thoại/Samsung/Samsung Galaxy Note 20 Ultra/anh2.PNG')
+
 
+
+
+
+
+
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_17',N'\Điện thoại\Samsung\Samsung Galaxy Note 20 Ultra\anh3.PNG')
+
+
+values('dt_17',N'/Điện thoại/Samsung/Samsung Galaxy Note 20 Ultra/anh3.PNG')
+
 
+
+
+
+
+
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_18',N'\Điện thoại\Samsung\Samsung Galaxy Note 20 Ultra 5G\anh1.PNG')
+
+
+values('dt_18',N'/Điện thoại/Samsung/Samsung Galaxy Note 20 Ultra 5G/anh1.PNG')
+
 
+
+
+
+
+
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_18',N'\Điện thoại\Samsung\Samsung Galaxy Note 20 Ultra 5G\anh2.PNG')
+
+
+values('dt_18',N'/Điện thoại/Samsung/Samsung Galaxy Note 20 Ultra 5G/anh2.PNG')
+
 
+
+
+
+
+
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_18',N'\Điện thoại\Samsung\Samsung Galaxy Note 20 Ultra 5G\anh3.PNG')
+
+
+values('dt_18',N'/Điện thoại/Samsung/Samsung Galaxy Note 20 Ultra 5G/anh3.PNG')
+
 
+
+
+
+
+
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_19',N'\Điện thoại\Samsung\Samsung Galaxy S20+\anh1.PNG')
+
+
+values('dt_19',N'/Điện thoại/Samsung/Samsung Galaxy S20+/anh1.PNG')
+
 
+
+
+
+
+
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_19',N'\Điện thoại\Samsung\Samsung Galaxy S20+\anh2.PNG')
+
+
+values('dt_19',N'/Điện thoại/Samsung/Samsung Galaxy S20+/anh2.PNG')
+
 
+
+
+
+
+
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_19',N'\Điện thoại\Samsung\Samsung Galaxy S20+\anh3.PNG')
+
+
+values('dt_19',N'/Điện thoại/Samsung/Samsung Galaxy S20+/anh3.PNG')
+
 
+
+
+
+
+
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_20',N'\Điện thoại\Samsung\Samsung Galaxy Z Fold2 5G\anh1.PNG')
+
+
+values('dt_20',N'/Điện thoại/Samsung/Samsung Galaxy Z Fold2 5G/anh1.PNG')
+
 
+
+
+
+
+
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_20',N'\Điện thoại\Samsung\Samsung Galaxy Z Fold2 5G\anh2.PNG')
+
+
+values('dt_20',N'/Điện thoại/Samsung/Samsung Galaxy Z Fold2 5G/anh2.PNG')
+
 
+
+
+
+
+
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_20',N'\Điện thoại\Samsung\Samsung Galaxy Z Fold2 5G\anh3.PNG')
+
+
+values('dt_20',N'/Điện thoại/Samsung/Samsung Galaxy Z Fold2 5G/anh3.PNG')
+
 
+
+
+
+
+
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_21',N'\Điện thoại\Vsmart\Vsmart Active 3 6GB-64GB\anh1.PNG')
+
+
+values('dt_21',N'/Điện thoại/Vsmart/Vsmart Active 3 6GB-64GB/anh1.PNG')
+
 
+
+
+
+
+
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_21',N'\Điện thoại\Vsmart\Vsmart Active 3 6GB-64GB\anh2.PNG')
+
+
+values('dt_21',N'/Điện thoại/Vsmart/Vsmart Active 3 6GB-64GB/anh2.PNG')
+
 
+
+
+
+
+
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_21',N'\Điện thoại\Vsmart\Vsmart Active 3 6GB-64GB\anh3.PNG')
+
+
+values('dt_21',N'/Điện thoại/Vsmart/Vsmart Active 3 6GB-64GB/anh3.PNG')
+
 
+
+
+
+
+
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_22',N'\Điện thoại\Vsmart\Vsmart Aris 8GB-128GB\anh1.PNG')
+
+
+values('dt_22',N'/Điện thoại/Vsmart/Vsmart Aris 8GB-128GB/anh1.PNG')
+
 
+
+
+
+
+
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_22',N'\Điện thoại\Vsmart\Vsmart Aris 8GB-128GB\anh2.PNG')
+
+
+values('dt_22',N'/Điện thoại/Vsmart/Vsmart Aris 8GB-128GB/anh2.PNG')
+
 
+
+
+
+
+
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_22',N'\Điện thoại\Vsmart\Vsmart Aris 8GB-128GB\anh3.PNG')
+
+
+values('dt_22',N'/Điện thoại/Vsmart/Vsmart Aris 8GB-128GB/anh3.PNG')
+
 
+
+
+
+
+
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_23',N'\Điện thoại\Vsmart\Vsmart Aris Pro 8GB-128GB\anh1.PNG')
+
+
+values('dt_23',N'/Điện thoại/Vsmart/Vsmart Aris Pro 8GB-128GB/anh1.PNG')
+
 
+
+
+
+
+
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_23',N'\Điện thoại\Vsmart\Vsmart Aris Pro 8GB-128GB\anh2.PNG')
+
+
+values('dt_23',N'/Điện thoại/Vsmart/Vsmart Aris Pro 8GB-128GB/anh2.PNG')
+
 
+
+
+
+
+
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_23',N'\Điện thoại\Vsmart\Vsmart Aris Pro 8GB-128GB\anh3.PNG')
+
+
+values('dt_23',N'/Điện thoại/Vsmart/Vsmart Aris Pro 8GB-128GB/anh3.PNG')
+
 
+
+
+
+
+
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_24',N'\Điện thoại\Vsmart\Vsmart Joy 4 3GB-64GB\anh1.PNG')
+
+
+values('dt_24',N'/Điện thoại/Vsmart/Vsmart Joy 4 3GB-64GB/anh1.PNG')
+
 
+
+
+
+
+
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_24',N'\Điện thoại\Vsmart\Vsmart Joy 4 3GB-64GB\anh2.PNG')
+
+
+values('dt_24',N'/Điện thoại/Vsmart/Vsmart Joy 4 3GB-64GB/anh2.PNG')
+
 
+
+
+
+
+
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_24',N'\Điện thoại\Vsmart\Vsmart Joy 4 3GB-64GB\anh3.PNG')
+
+
+values('dt_24',N'/Điện thoại/Vsmart/Vsmart Joy 4 3GB-64GB/anh3.PNG')
+
 
+
+
+
+
+
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_25',N'\Điện thoại\Vsmart\Vsmart Live 4 6GB-64GB\anh1.PNG')
+
+
+values('dt_25',N'/Điện thoại/Vsmart/Vsmart Live 4 6GB-64GB/anh1.PNG')
+
 
+
+
+
+
+
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_25',N'\Điện thoại\Vsmart\Vsmart Live 4 6GB-64GB\anh2.PNG')
+
+
+values('dt_25',N'/Điện thoại/Vsmart/Vsmart Live 4 6GB-64GB/anh2.PNG')
+
 
+
+
+
+
+
 insert into dienthoaihinhanh(madienthoai,hinhanh)
-values('dt_25',N'\Điện thoại\Vsmart\Vsmart Live 4 6GB-64GB\anh3.PNG')
+
+
+values('dt_25',N'/Điện thoại/Vsmart/Vsmart Live 4 6GB-64GB/anh3.PNG')
+
+
 
 --bo nho dien thoai
 --1,2,3,4,5
